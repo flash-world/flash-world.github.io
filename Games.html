@@ -1,0 +1,54 @@
+<html>
+
+<head>
+  <title>Flash World - Flash Games</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" type="image/x-icon" href="Logo.png">
+</head>
+
+<body>
+  <img style="display:block;margin:auto;" src="flashgames.png">
+  <div class="navbar">
+    <a href="/"><button>Home</button></a>
+
+    <a href="Games.html"><button><b>Flash Games</b></button></a>
+
+    <a href="Other.html"><button>Other Games</button></a>
+
+    <a href="htgf.html"><button>How to get Flash</button></a>
+
+    <a href="Contact.html"><button>Contact</button></a>
+  </div>
+  <div class="content-box" id="GamesDiv" style="text-align: center; min-height:8em ; max-height: 100%;">
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const games = [
+
+          {title: "Age of War", link: "aow.html"},
+          {title: "Angry Birds", link: "ab.html"},
+          {title: "Bloons TD 4", link: "btd4.html"},
+          {title: "N", link: "N.html"},
+          {title: "Papa's Pizzeria", link: "papi.html"},
+          {title: "Run", link: "run.html"},
+
+          // Add more games here as needed
+        ];
+        const gameList = document.getElementById("GamesDiv");
+        games.forEach(game => {
+          const listItem = document.createElement('div');
+          const link = document.createElement('a');
+          link.setAttribute("class", "gamelink");
+          link.textContent = game.title;
+          link.href = `games/${game.link}`;
+          listItem.appendChild(link);
+          gameList.appendChild(listItem);
+        });
+        document.body.appendChild(gameList);
+      });
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4946683261988252"
+      crossorigin="anonymous"></script>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+@font-face {
+  font-family: CoSa;
+  src: url(comic.ttf);
+}
+
+body {
+  background: rgb(255, 117, 0);
+  background: -moz-linear-gradient(180deg, rgba(255, 117, 0, 1) 0%, rgba(255, 232, 194, 1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(255, 117, 0, 1) 0%, rgba(255, 232, 194, 1) 100%);
+  background: linear-gradient(180deg, rgba(255, 117, 0, 1) 0%, rgba(255, 232, 194, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff7500", endColorstr="#ffe8c2", GradientType=1);
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+html {
+  height: 100%
+}
+
+.content-box {
+  margin: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 700px;
+  padding: 15px;
+  background: rgb(222, 222, 222);
+  border: 8px white outset;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px;
+}
+
+.content-box h1 {
+  text-shadow: 8px 4px 0px #fed234, -5px -8px 0px #ffbb00, 3px 0px 9px #ffa200;
+  font-size: 2.2em;
+}
+
+.content-box p {
+  font-size: 1.3em;
+}
+
+.content-box-a {
+  font-size: 1.3em;
+  color: #5900ff;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+.content-box-a:hover {
+  font-size: 1.4em;
+  color: #5900ff;
+  text-decoration: underline;
+}
+
+
+.navbar {
+  margin: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  width: 600px;
+  padding: 8px;
+  background: rgb(222, 222, 222);
+  border: 8px white outset;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px;
+}
+
+.navbar button {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.navbar a {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  font-family: CoSa;
+}
+
+.gamelink {
+  color: #ffa600;
+  text-shadow: black 0.05em 0.05em 0em;
+  transition: 0.5s;
+  line-height: 1.2em;
+  font-size: 1.5em;
+  z-index: 1;
+  order: 1;
+
+}
+
+.gamelink:hover {
+  text-shadow: none;
+  color: black;
+  background-color: orange;
+  border-radius: 8px;
+  padding: 3px;
+  border: 3px turqoise outset;
+  z-index: -1;
+  order: 2;
+  font-size: 1.8em;
+  line-height: 2em;
+  margin-bottom: 69420em;
+
+}

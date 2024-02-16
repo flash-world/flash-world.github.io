@@ -39,7 +39,7 @@
       if (gameElement) {
         //<embed src="somefilename.swf" width="550" height="400"> </embed>
         var objectElement = document.createElement('embed');
-        objectElement.setAttribute("src", "https://github.com/gameproxy/swf_storage_1/blob/907a0283a4167ab7ce5a3f46da958d9deb1abdae/Run.swf");
+        objectElement.setAttribute("src", "../swfs/Run.swf");
         objectElement.setAttribute("style", "display:block;margin:auto");
         objectElement.setAttribute("width", "617");
         objectElement.setAttribute("height", "469");
@@ -56,7 +56,7 @@
       var gameElement = document.getElementById("Game");
       if (gameElement) {
         var objectElement = document.createElement('object');
-        objectElement.setAttribute("data", "https://github.com/gameproxy/swf_storage_1/blob/907a0283a4167ab7ce5a3f46da958d9deb1abdae/Run.swf");
+        objectElement.setAttribute("data", "../swfs/Run.swf");
         objectElement.setAttribute("style", "display:block;margin:auto");
         gameElement.appendChild(objectElement);
         var flashScript = document.createElement('script');

@@ -20,7 +20,7 @@
     <a href="../Contact.html"><button>Contact</button></a>
   </div>
 
-  <div class="content-box" id="Game">
+  <div class="content-box" id="Game" style="width: 680px;">
 
   </div>
   <script>
@@ -42,8 +42,8 @@
         var objectElement = document.createElement('embed');
         objectElement.setAttribute("src", "../swfs/tp.swf");
         objectElement.setAttribute("style", "display:block;margin:auto");
-        objectElement.setAttribute("width", "800");
-        objectElement.setAttribute("height", "600");
+        objectElement.setAttribute("width", "640");
+        objectElement.setAttribute("height", "480");
         gameElement.appendChild(objectElement);
         document.head.appendChild(flashScript);
         var note = document.createElement('p');
@@ -59,8 +59,8 @@
         var objectElement = document.createElement('object');
         objectElement.setAttribute("data", "../swfs/tp.swf");
         objectElement.setAttribute("style", "display:block;margin:auto");
-        objectElement.setAttribute("width", "800");
-        objectElement.setAttribute("height", "600");
+        objectElement.setAttribute("width", "640");
+        objectElement.setAttribute("height", "480");
         gameElement.appendChild(objectElement);
         var flashScript = document.createElement('script');
         flashScript.src = "ruffle.js";

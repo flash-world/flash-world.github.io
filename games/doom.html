@@ -1,7 +1,7 @@
 <html>
 
 <head>
-  <title>Bloons Tower Defence 5</title>
+  <title>DOOM</title>
   <link rel="stylesheet" type="text/css" href="../style.css">
   <link rel="icon" type="image/x-icon" href="../Logo.png">
 </head>
@@ -40,7 +40,7 @@
       if (gameElement) {
         //<embed src="somefilename.swf" width="550" height="400"> </embed>
         var objectElement = document.createElement('embed');
-        objectElement.setAttribute("src", "../swfs/bloonstd5_Alt.swf");
+        objectElement.setAttribute("src", "../swfs/doom.swf");
         objectElement.setAttribute("style", "display:block;margin:auto");
         objectElement.setAttribute("width", "617");
         objectElement.setAttribute("height", "469");
@@ -57,15 +57,12 @@
       var gameElement = document.getElementById("Game");
       if (gameElement) {
         var objectElement = document.createElement('object');
-        objectElement.setAttribute("data", "../swfs/bloonstd5_Alt.swf");
+        objectElement.setAttribute("data", "../swfs/doom.swf");
         objectElement.setAttribute("style", "display:block;margin:auto");
         gameElement.appendChild(objectElement);
         var flashScript = document.createElement('script');
         flashScript.src = "ruffle.js";
         document.head.appendChild(flashScript);
-        var warning = document.createElement('p');
-        warning.innerHTML = 'This Game Currently does not work under Ruffle at the moment. You must have flash to play this game. I am unable to change this. Sorry for the inconvience.';
-        warning.setAttribute("style", "color: red; font-style: bold; text-align: center");
         var note = document.createElement('p');
         note.innerHTML = 'You do not have Flash Player installed. Running under Ruffle instead';
         note.setAttribute("style", "color: gray; font-style: italic; text-align: center");

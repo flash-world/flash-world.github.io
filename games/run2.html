@@ -1,9 +1,8 @@
 <html>
 
 <head>
-  <title>N</title>
+  <title>Run 2</title>
   <link rel="stylesheet" type="text/css" href="../style.css">
-  <link rel="icon" type="image/x-icon" href="../Logo.png">
 </head>
 
 <body>
@@ -20,9 +19,8 @@
     <a href="../Contact.html"><button>Contact</button></a>
   </div>
 
-  <div class="content-box" id="Game" style="text-align: center;width: 810px;">
-    <p>I absolutely love this game. Check out the game's official website!</p>
-    <p><a href="https://www.thewayoftheninja.org/" class="content-box-a">Click Here</a></p>
+  <div class="content-box" id="Game">
+
   </div>
   <script>
     var hasFlash = false;
@@ -41,10 +39,10 @@
       if (gameElement) {
         //<embed src="somefilename.swf" width="550" height="400"> </embed>
         var objectElement = document.createElement('embed');
-        objectElement.setAttribute("src", "../swfs/N_Alt.swf");
+        objectElement.setAttribute("src", "../swfs/run2.swf");
         objectElement.setAttribute("style", "display:block;margin:auto");
-        objectElement.setAttribute("width", "800");
-        objectElement.setAttribute("height", "600");
+        objectElement.setAttribute("width", "617");
+        objectElement.setAttribute("height", "469");
         gameElement.appendChild(objectElement);
         document.head.appendChild(flashScript);
         var note = document.createElement('p');
@@ -58,10 +56,8 @@
       var gameElement = document.getElementById("Game");
       if (gameElement) {
         var objectElement = document.createElement('object');
-        objectElement.setAttribute("data", "../swfs/N_Alt.swf");
+        objectElement.setAttribute("data", "../swfs/run2.swf");
         objectElement.setAttribute("style", "display:block;margin:auto");
-        objectElement.setAttribute("width", "800");
-        objectElement.setAttribute("height", "600");
         gameElement.appendChild(objectElement);
         var flashScript = document.createElement('script');
         flashScript.src = "ruffle.js";

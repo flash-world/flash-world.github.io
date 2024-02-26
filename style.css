@@ -32,11 +32,12 @@ html {
   margin-left: auto;
   margin-right: auto;
   display: block;
-  width: 700px;
+  width: 90%;
+  min-width: 700px;
   padding: 15px;
   background: rgb(18, 18, 18);
   border: 8px rgb(27, 27, 27) outset;
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 5px 5px 10px;
   color: white;
 }
@@ -95,7 +96,7 @@ html {
   -moz-border-radius: 25;
   border-radius: 25px;
   color: #ffffff;
-  font-size: 20px;
+  font-size: auto;
   padding: 3px 13px 3px 13px;
   border: solid #4a4a4a 2px;
   text-decoration: none;

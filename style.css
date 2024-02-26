@@ -43,7 +43,7 @@ html {
 }
 
 .content-box h1 {
-  text-shadow: 8px 4px 0px #e5bb25, -5px -8px 0px #daa000, 3px 0px 9px #ef9700;
+  text-shadow:0 0 1px black  8px 4px 0px #e5bb25, -5px -8px 0px #daa000, 3px 0px 9px #ef9700;
   color: rgb(255, 255, 255);
   font-size: 2.2em;
 }

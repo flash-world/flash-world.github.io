@@ -19,6 +19,7 @@ background: linear-gradient(180deg, rgba(255,202,97,1) 0%, rgba(255,193,41,1) 3%
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffca61",endColorstr="#d98400",GradientType=1);
   height: 100%;
   margin: 5px;
+  margin-bottom:15px ;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }

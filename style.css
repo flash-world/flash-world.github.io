@@ -26,31 +26,34 @@ html {
   display: block;
   width: 700px;
   padding: 15px;
-  background: rgb(222, 222, 222);
-  border: 8px white outset;
+  background: rgb(18, 18, 18);
+  border: 8px rgb(27, 27, 27) outset;
   border-radius: 10px;
   box-shadow: 5px 5px 10px;
+  color: white;
 }
 
 .content-box h1 {
   text-shadow: 8px 4px 0px #fed234, -5px -8px 0px #ffbb00, 3px 0px 9px #ffa200;
+  color: white;
   font-size: 2.2em;
 }
 
 .content-box p {
   font-size: 1.3em;
+  color: white;
 }
 
 .content-box-a {
   font-size: 1.3em;
-  color: #5900ff;
+  color: #ffa92f;
   text-decoration: underline;
   transition: 0.3s;
 }
 
 .content-box-a:hover {
   font-size: 1.4em;
-  color: #5900ff;
+  color: #ffa92f;
   text-decoration: underline;
 }
 
@@ -62,8 +65,8 @@ html {
   display: flex;
   width: 600px;
   padding: 8px;
-  background: rgb(222, 222, 222);
-  border: 8px white outset;
+  background: rgb(18, 18, 18);
+  border: 8px rgb(27, 27, 27) outset;
   border-radius: 10px;
   box-shadow: 5px 5px 10px;
 }

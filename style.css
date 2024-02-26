@@ -38,7 +38,7 @@ html {
   background: rgb(18, 18, 18);
   border: 8px rgb(27, 27, 27) outset;
   border-radius: 20px;
-  box-shadow: 5px 5px 10px;
+  box-shadow: black 5px 5px 10px;
   color: white;
 }
 

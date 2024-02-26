@@ -13,10 +13,10 @@ body {
 */
 /* Sexy new gradient */
 background: rgb(255,202,97);
-background: -moz-linear-gradient(180deg, rgba(255,202,97,1) 0%, rgba(255,193,41,1) 3%, rgba(252,163,0,1) 39%, rgba(215,128,0,1) 73%, rgba(0,0,0,1) 100%);
-background: -webkit-linear-gradient(180deg, rgba(255,202,97,1) 0%, rgba(255,193,41,1) 3%, rgba(252,163,0,1) 39%, rgba(215,128,0,1) 73%, rgba(0,0,0,1) 100%);
-background: linear-gradient(180deg, rgba(255,202,97,1) 0%, rgba(255,193,41,1) 3%, rgba(252,163,0,1) 39%, rgba(215,128,0,1) 73%, rgba(0,0,0,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffca61",endColorstr="#000000",GradientType=1);
+background: -moz-linear-gradient(180deg, rgba(255,202,97,1) 0%, rgba(255,193,41,1) 3%, rgba(252,163,0,1) 39%, rgba(215,128,0,1) 73%, rgba(217,132,0,1) 100%);
+background: -webkit-linear-gradient(180deg, rgba(255,202,97,1) 0%, rgba(255,193,41,1) 3%, rgba(252,163,0,1) 39%, rgba(215,128,0,1) 73%, rgba(217,132,0,1) 100%);
+background: linear-gradient(180deg, rgba(255,202,97,1) 0%, rgba(255,193,41,1) 3%, rgba(252,163,0,1) 39%, rgba(215,128,0,1) 73%, rgba(217,132,0,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffca61",endColorstr="#d98400",GradientType=1);
   height: 100%;
   margin: 0;
   background-repeat: no-repeat;
@@ -86,12 +86,11 @@ html {
   display: block;
 }
 .navbar button {
-  background: #9e9e9e;
-  background-image: -webkit-linear-gradient(top, #9e9e9e, #2e2e2e);
-  background-image: -moz-linear-gradient(top, #9e9e9e, #2e2e2e);
-  background-image: -ms-linear-gradient(top, #9e9e9e, #2e2e2e);
-  background-image: -o-linear-gradient(top, #9e9e9e, #2e2e2e);
-  background-image: linear-gradient(to bottom, #9e9e9e, #2e2e2e);
+  background: rgb(110,110,110);
+  background: -moz-linear-gradient(180deg, rgba(110,110,110,1) 0%, rgba(93,93,93,1) 12%, rgba(125,125,125,1) 43%, rgba(64,64,64,1) 73%, rgba(32,32,32,1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(110,110,110,1) 0%, rgba(93,93,93,1) 12%, rgba(125,125,125,1) 43%, rgba(64,64,64,1) 73%, rgba(32,32,32,1) 100%);
+  background: linear-gradient(180deg, rgba(110,110,110,1) 0%, rgba(93,93,93,1) 12%, rgba(125,125,125,1) 43%, rgba(64,64,64,1) 73%, rgba(32,32,32,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6e6e6e",endColorstr="#202020",GradientType=1);
   -webkit-border-radius: 25;
   -moz-border-radius: 25;
   border-radius: 25px;
@@ -103,12 +102,11 @@ html {
 }
 
 .navbar button:hover {
-  background: #fab43c;
-  background-image: -webkit-linear-gradient(top, #fab43c, #ffa60d);
-  background-image: -moz-linear-gradient(top, #fab43c, #ffa60d);
-  background-image: -ms-linear-gradient(top, #fab43c, #ffa60d);
-  background-image: -o-linear-gradient(top, #fab43c, #ffa60d);
-  background-image: linear-gradient(to bottom, #fab43c, #ffa60d);
+  background: rgb(255,202,97);
+  background: -moz-linear-gradient(180deg, rgba(255,202,97,1) 0%, rgba(255,193,41,1) 3%, rgba(252,163,0,1) 39%, rgba(215,128,0,1) 73%, rgba(217,132,0,1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(255,202,97,1) 0%, rgba(255,193,41,1) 3%, rgba(252,163,0,1) 39%, rgba(215,128,0,1) 73%, rgba(217,132,0,1) 100%);
+  background: linear-gradient(180deg, rgba(255,202,97,1) 0%, rgba(255,193,41,1) 3%, rgba(252,163,0,1) 39%, rgba(215,128,0,1) 73%, rgba(217,132,0,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffca61",endColorstr="#d98400",GradientType=1);
   text-decoration: none;
 }
 

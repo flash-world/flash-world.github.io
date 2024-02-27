@@ -1,0 +1,76 @@
+<html>
+
+<head>
+  <title>Moto X3M</title>
+  <link rel="stylesheet" type="text/css" href="../style.css">
+  <link rel="icon" type="image/x-icon" href="../Logo.png">
+</head>
+
+<body>
+
+  <div class="navbar">
+    <a href="../"><button>Home</button></a>
+
+    <a href="../Games.html"><button>Flash Games</button></a>
+
+    <a href="../Other.html"><button>Other Games</button></a>
+
+    <a href="../htgf.html"><button>How to get Flash</button></a>
+
+    <a href="../Contact.html"><button>Contact</button></a>
+  </div>
+
+  <div class="content-box" id="Game">
+
+  </div>
+  <script>
+    var hasFlash = false;
+    try {
+      var fo = new ActiveXObject('ShockwaveFlash.ShockwaveFlash');
+      if (fo) {
+        hasFlash = true;
+      }
+    } catch (e) {
+      if (navigator.mimeTypes["application/x-shockwave-flash"] != undefined) {
+        hasFlash = true;
+      }
+    }
+    if (hasFlash) {
+      var gameElement = document.getElementById("Game");
+      if (gameElement) {
+        //<embed src="somefilename.swf" width="550" height="400"> </embed>
+        var objectElement = document.createElement('embed');
+        objectElement.setAttribute("src", "../swfs/motox3m.swf");
+        objectElement.setAttribute("style", "display:block;margin:auto");
+        objectElement.setAttribute("width", "617");
+        objectElement.setAttribute("height", "469");
+        gameElement.appendChild(objectElement);
+        document.head.appendChild(flashScript);
+        var note = document.createElement('p');
+        note.innerHTML = 'You have Flash Player installed! Really cool!';
+        note.setAttribute("style", "color: gray; font-style: italic; text-align: center");
+        gameElement.appendChild(note);
+      } else {
+        console.error("Game element not found");
+      }
+    } else if (!hasFlash) {
+      var gameElement = document.getElementById("Game");
+      if (gameElement) {
+        var objectElement = document.createElement('object');
+        objectElement.setAttribute("data", "../swfs/motox3m.swf");
+        objectElement.setAttribute("style", "display:block;margin:auto");
+        gameElement.appendChild(objectElement);
+        var flashScript = document.createElement('script');
+        flashScript.src = "ruffle.js";
+        document.head.appendChild(flashScript);
+        var note = document.createElement('p');
+        note.innerHTML = 'You do not have Flash Player installed. Running under Ruffle instead';
+        note.setAttribute("style", "color: gray; font-style: italic; text-align: center");
+        gameElement.appendChild(note);
+      } else {
+        console.error("Game element not found");
+      }
+    }
+  </script>
+
+</body>

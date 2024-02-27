@@ -43,7 +43,7 @@
         objectElement.setAttribute("src", "../swfs/flappy-bird.swf");
         objectElement.setAttribute("style", "display:block;margin:auto");
         objectElement.setAttribute("width", "617");
-        objectElement.setAttribute("height", "469");
+        objectElement.setAttribute("height", "auto");
         gameElement.appendChild(objectElement);
         document.head.appendChild(flashScript);
         var note = document.createElement('p');
@@ -59,6 +59,8 @@
         var objectElement = document.createElement('object');
         objectElement.setAttribute("data", "../swfs/flappy-bird.swf");
         objectElement.setAttribute("style", "display:block;margin:auto");
+        objectElement.setAttribute("width", "617");
+        objectElement.setAttribute("height", "auto");
         gameElement.appendChild(objectElement);
         var flashScript = document.createElement('script');
         flashScript.src = "ruffle.js";

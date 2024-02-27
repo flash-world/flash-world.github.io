@@ -86,7 +86,7 @@ html {
   padding: 8px;
   background: rgb(18, 18, 18);
   border: 8px rgb(27, 27, 27) outset;
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 5px 5px 10px;
 }
 
@@ -96,11 +96,17 @@ html {
   display: block;
 }
 .navbar button {
-  background: rgb(110,110,110);
+ /* background: rgb(110,110,110);
   background: -moz-linear-gradient(180deg, rgba(110,110,110,1) 0%, rgba(93,93,93,1) 12%, rgba(125,125,125,1) 43%, rgba(64,64,64,1) 73%, rgba(32,32,32,1) 100%);
   background: -webkit-linear-gradient(180deg, rgba(110,110,110,1) 0%, rgba(93,93,93,1) 12%, rgba(125,125,125,1) 43%, rgba(64,64,64,1) 73%, rgba(32,32,32,1) 100%);
   background: linear-gradient(180deg, rgba(110,110,110,1) 0%, rgba(93,93,93,1) 12%, rgba(125,125,125,1) 43%, rgba(64,64,64,1) 73%, rgba(32,32,32,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6e6e6e",endColorstr="#202020",GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6e6e6e",endColorstr="#202020",GradientType=1);*/
+  background: #424242;
+  background-image: -webkit-linear-gradient(top, #424242, #000000);
+  background-image: -moz-linear-gradient(top, #424242, #000000);
+  background-image: -ms-linear-gradient(top, #424242, #000000);
+  background-image: -o-linear-gradient(top, #424242, #000000);
+  background-image: linear-gradient(to bottom, #424242, #000000);
   -webkit-border-radius: 25;
   -moz-border-radius: 25;
   border-radius: 25px;

@@ -224,7 +224,7 @@ text-decoration: none;
   text-decoration:none;
   display:block;
   border:outset grey 0.2em;
-  box-shadow:0em 0em 0.5em;
+  box-shadow:0em 0em 0.5em black;
   border-radius:1em;
   max-height:17em;
   padding:0.1em;

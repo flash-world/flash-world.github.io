@@ -1,0 +1,25 @@
+{
+  "name": "fakedaringduels",
+  "description": "totally real daring duels!!!!!!11111",
+  "version": "1.0.0",
+  "scripts": {
+    "buildClient": "npm install",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "npm run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AceTrainerAndrew/fnf-week-7-code.git"
+  },
+  "keywords": [],
+  "author": "Ninjamuffin99 and AceTrainerAndrew",
+  "license": "ISC",
+  "homepage": "https://acetrainerandrew.github.io/fnf-week-7-code/",
+"pkg":{
+"assets":[
+"assets/"
+]
+}
+}

@@ -139,7 +139,7 @@ a {
 * {
   font-family: CoSa;
 }
-
+/*
 .gamelink {
   color: #ffa600;
   text-shadow: black 0.05em 0.05em 0em;
@@ -165,6 +165,7 @@ a {
   margin-bottom: 69420em;
 
 }
+*/
 .rp {
   background: #424242;
   background-image: -webkit-linear-gradient(top, #424242, #000000);
@@ -217,6 +218,7 @@ background: linear-gradient(180deg, rgba(210,98,255,1) 0%, rgba(160,0,236,1) 12%
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d262ff",endColorstr="#46008a",GradientType=1);
 text-decoration: none;
 }
+
 .collectiondiv {
   text-align:center;
   margin:auto;

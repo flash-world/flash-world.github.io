@@ -219,6 +219,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d262ff",endCo
 text-decoration: none;
 }
 
+
 .collectiondiv {
   text-align:center;
   margin:0.3em;
@@ -228,11 +229,11 @@ text-decoration: none;
   border:outset grey 0.2em;
   box-shadow:0em 0em 0.5em black;
   border-radius:1em;
-  max-height:17em;
-  padding:0.1em;
-  line-height:0.1em;
+  max-height:13em;
+  padding:0.05em;
+  line-height:0.05em;
   
-  width :14em;
+  width :11em;
 background: rgb(73,73,73);
 background: -moz-linear-gradient(180deg, rgba(73,73,73,1) 0%, rgba(91,91,91,1) 15%, rgba(77,77,77,1) 41%, rgba(45,45,45,1) 73%, rgba(0,0,0,1) 100%);
 background: -webkit-linear-gradient(180deg, rgba(73,73,73,1) 0%, rgba(91,91,91,1) 15%, rgba(77,77,77,1) 41%, rgba(45,45,45,1) 73%, rgba(0,0,0,1) 100%);
@@ -243,7 +244,7 @@ transition:0.3s;
 .collectiondiv img {
   text-align:center;
   display:block;
-  width: 12em;
+  width: 10em;
   margin:auto;
   margin-bottom:0.8em;
   border-radius:1em;
@@ -268,5 +269,3 @@ transition:0.3s;
   text-decoration: none;
   cursor:pointer;
 }
-
-

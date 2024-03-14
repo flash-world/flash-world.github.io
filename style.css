@@ -256,7 +256,7 @@ transition:0.3s;
   color:white;
   text-decoration:none;
   text-shadow:0px 0px 0.4em black;
-  font-size:1em;
+  font-size:0.8em;
 }
 .collectiondiv:hover{
   box-shadow:0px 0px 2em orange;

@@ -269,7 +269,7 @@ transition:0.3s;
   text-decoration: none;
   cursor:pointer;
 }
-iframe{
+.iframe{
   display: block;
   margin: auto;
   border:outset grey 0.2em;

@@ -2,8 +2,8 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: #faf8ef;
-  color: #776e65;
+  background: #000000;
+  color: #ff8000;
   font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 18px; }
 
@@ -53,7 +53,7 @@ h1.title {
 .score-container, .best-container {
   position: relative;
   display: inline-block;
-  background: #bbada0;
+  background: #0d0d0d;
   padding: 15px 25px;
   font-size: 25px;
   height: 25px;
@@ -72,7 +72,7 @@ h1.title {
     font-size: 13px;
     line-height: 13px;
     text-align: center;
-    color: #eee4da; }
+    color: #0d0d0d; }
   .score-container .score-addition, .best-container .score-addition {
     position: absolute;
     right: 30px;
@@ -80,7 +80,7 @@ h1.title {
     font-size: 25px;
     line-height: 25px;
     font-weight: bold;
-    color: rgba(119, 110, 101, 0.9);
+    color: rgba(105, 105, 105, 0.9);
     z-index: 100;
     -webkit-animation: move-up 600ms ease-in;
     -moz-animation: move-up 600ms ease-in;

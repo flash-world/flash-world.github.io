@@ -14,7 +14,8 @@ body {
   background: -webkit-linear-gradient(180deg, rgba(255,202,97,1) 0%, rgba(255,193,41,1) 3%, rgba(252,163,0,1) 39%, rgba(215,128,0,1) 73%, rgba(217,132,0,1) 100%);
   background: linear-gradient(180deg, rgba(255,202,97,1) 0%, rgba(255,193,41,1) 3%, rgba(252,163,0,1) 39%, rgba(215,128,0,1) 73%, rgba(217,132,0,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffca61",endColorstr="#d98400",GradientType=1);
-   }
+background-size: cover;   
+}
 
 .heading:after {
   content: "";
@@ -78,7 +79,7 @@ h1.title {
     font-size: 13px;
     line-height: 13px;
     text-align: center;
-    color: #0d0d0d; }
+    color: #ffffff; }
   .score-container .score-addition, .best-container .score-addition {
     position: absolute;
     right: 30px;
@@ -535,7 +536,10 @@ hr {
   display: block;
   text-align: center;
   float: none; 
-margin: auto;}
+margin: auto;
+margin-top: 8px;
+width:10em;
+}
 
 .game-explanation {
   margin-top: 50px; }
@@ -561,8 +565,8 @@ margin: auto;}
     padding: 15px 10px;
     min-width: 40px; 
   margin-left:auto;
-  margin-right:auto;
-float:none;
+  margin-right:40px;
+float:right;
 display: block;}
 
   .heading {

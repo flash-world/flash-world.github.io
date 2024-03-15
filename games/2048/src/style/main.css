@@ -156,7 +156,7 @@ hr {
   -ms-user-select: none;
   -ms-touch-action: none;
   touch-action: none;
-  background: #bbada0;
+  background: #222222;
   border-radius: 6px;
   width: 500px;
   height: 500px;
@@ -227,7 +227,7 @@ hr {
   margin-right: 15px;
   float: left;
   border-radius: 3px;
-  background: rgba(238, 228, 218, 0.35); }
+  background: rgb(74 70 65 / 35%);}
   .grid-cell:last-child {
     margin-right: 0; }
 

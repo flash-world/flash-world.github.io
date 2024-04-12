@@ -369,7 +369,7 @@ display:flex;padding:auto;align-items:center;
       justify-content: center;flex-direction:row;flex-grow:1;
 
 }
-.container > div{
+div.container > div{
   color: #000000;
   text-shadow: #000000 3px 3px 3px;
   background: rgb(255,201,0);

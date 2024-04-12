@@ -370,8 +370,10 @@ display:flex;padding:auto;align-items:center;
 
 }
 div.container > div{
-  text-shadow: #000000 3px 3px 3px;
-  border: outset rgb(255, 208, 0) 0.5em;
+  text-shadow: #000000 0px 0px 3px;
+  border: outset rgb(65, 65, 65) 0.5em;
+  background: linear-gradient(180deg, rgba(73,73,73,1) 0%, rgba(91,91,91,1) 16%, rgba(120,120,120,1) 29%, rgba(77,77,77,1) 52%, rgba(45,45,45,1) 74%, rgba(0,0,0,1) 100%);
+ 
   border-radius:1em;
   width:auto;
 margin:0.5em;

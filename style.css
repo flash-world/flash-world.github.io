@@ -370,12 +370,15 @@ display:flex;padding:auto;align-items:center;
 
 }
 .container > div{
-  border: outset black 0.5em;
+  color: #000000;
+  text-shadow: #000000 3px 3px 3px;
+  background: rgb(255,201,0);
+  background: radial-gradient(circle, rgba(255,201,0,1) 0%, rgba(255,204,50,1) 35%, rgba(255,184,0,1) 100%);
+  border: outset rgb(255, 208, 0) 0.5em;
   border-radius:1em;
   width:auto;
-  padding:0.4em;
 margin:0.5em;
 display:block;
 flex-grow:1;
-padding: 0.5em;
+padding: 0.6em;
 }

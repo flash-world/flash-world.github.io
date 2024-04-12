@@ -2,6 +2,10 @@
   font-family: CoSa;
   src: url(comic.ttf);
 }
+@font-face {
+  font-family: MC;
+  src: url(./fonts/Minecrafter.Reg.ttf);
+}
 
 body {
 /* Old orange sherbert lookin ah gradient 

@@ -368,3 +368,13 @@ display:block;padding:auto;align-items:center;
       align-content:normal;
       justify-content: center;flex-direction:row;flex-grow:1;
 }
+.container > div{
+  border: outset black 0.5em;
+  border-radius:1em;
+  width:22em;
+  padding:0.4em;
+margin:0.5em;
+display:block;
+height:100%;
+flex-grow:1;
+}

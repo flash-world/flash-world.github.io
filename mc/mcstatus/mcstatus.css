@@ -1,0 +1,88 @@
+.mc-status {
+    overflow-x: auto;
+}
+
+.mc-status-root {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #000000;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: #444;
+    border-radius: 5px;
+}
+
+.mc-status-header {
+    color: inherit;
+    font-family: monospace;
+    font-size: 24px;
+
+    padding: 10px;
+    margin: 0;
+}
+
+.mc-description {
+    white-space: pre;
+    font-family: monospace;
+    font-size: 1.05em;
+    background-color: #000;
+    color: #bebebe;
+    border: solid #4a4a4a 2px;
+    width: 53ch;
+    padding: 10px;
+}
+
+.mc-description-bold {
+    font-weight: bold;
+}
+
+.mc-description-italic {
+    font-style: italic;
+}
+
+.mc-description-obfuscated {
+    color: #ffffff;
+    background-color: #ffffff;
+}
+
+.mc-description-strikethrough {
+    text-decoration: line-through;
+}
+
+.mc-description-underlined {
+    text-decoration: underline;
+}
+
+.mc-players {
+    color: inherit;
+    padding: 10px;
+    font-family: monospace;
+    font-size: 18px;
+}
+
+.mc-players-count {
+    color: inherit;
+    margin: 0;
+}
+
+.mc-players-list {
+    color: inherit;
+    list-style-type: none;
+    padding: 0;
+    margin-left: 4ch;
+    margin-bottom: 0;
+}
+
+.mc-players-list > li {
+    color: inherit;
+    display: inline;
+}
+
+.mc-players-list > li::after {
+    content: ", ";
+}
+
+.mc-players-list > li:last-child::after {
+    content: "";
+}

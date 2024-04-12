@@ -362,9 +362,9 @@ border-color:rgba(0,255,89,1);
    transition:0.1s; 
 }
 .container{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-flex-flow: row;
-flex-grow: auto;
+
+display:block;text-align:center;padding:auto;align-items:center;
+      flex-wrap: wrap;height: max-content;
+      align-content: center;
+      justify-content: center;flex-direction:row;flex-grow:1;
 }

@@ -363,8 +363,8 @@ border-color:rgba(0,255,89,1);
 }
 .container{
 
-display:block;text-align:center;padding:auto;align-items:center;
-      flex-wrap: wrap;height: max-content;
-      align-content: center;
+display:block;padding:auto;align-items:center;
+      flex-wrap: wrap;
+      align-content:normal;
       justify-content: center;flex-direction:row;flex-grow:1;
 }

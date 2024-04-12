@@ -361,3 +361,10 @@ background: linear-gradient(180deg, rgba(0,249,75,1) 0%, rgba(115,255,102,1) 29%
 border-color:rgba(0,255,89,1);
    transition:0.1s; 
 }
+.container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+flex-flow: row;
+flex-grow: auto;
+}

@@ -4,13 +4,11 @@
 
 .mc-status-root {
     display: inline-block;
-    background-color: #ffffff;
-    color: #000000;
-
-    border-style: solid;
     border-width: 2px;
     border-color: #444;
     border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .mc-status-header {

@@ -1,5 +1,9 @@
 .mc-status {
     overflow-x: auto;
+    display: block;
+    margin-left:auto ;
+    margin-right:auto ;
+    width: max-content;
 }
 
 .mc-status-root {
@@ -62,6 +66,7 @@
 .mc-players-count {
     color: inherit;
     margin: 0;
+    text-align: center;
 }
 
 .mc-players-list {

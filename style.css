@@ -295,10 +295,10 @@ background: linear-gradient(180deg, rgba(73,73,73,1) 0%, rgba(91,91,91,1) 16%, r
   border: outset black 0.5em;
   border-radius:1em;
   width:22em;
-  padding:0.4em;
+  padding:0.5em;
 margin:0.5em;
 display:block;
-height:100%;
+
 flex-grow:1;
 
 

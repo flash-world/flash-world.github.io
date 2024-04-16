@@ -334,10 +334,10 @@ background: linear-gradient(180deg, rgba(73,73,73,1) 0%, rgba(91,91,91,1) 16%, r
 }
 
 div.fdiv > div > p{
-  color:white;
+  color:white; width: 90%;
 }
 .fthumb{
-  width:202px;
+  width:100%;
   height:auto;
 
   display:block;

@@ -1,0 +1,82 @@
+<html>
+
+<head>
+  <title>Diablo</title>
+  <link rel="stylesheet" type="text/css" href="/style.css">
+  <link rel="icon" type="image/x-icon" href="/Logo.png">
+</head>
+
+<body>
+
+  <div class="navbar">
+    <a href="../"><button>Home</button></a>
+
+    <a href="/Games.html"><button>Flash Games</button></a>
+
+    <a href="/Other.html"><button>Other Games</button></a>
+
+    <a href="/htgf.html"><button>How to get Flash</button></a>
+
+    <a href="/Contact.html"><button>Contact</button></a>
+  </div>
+
+  <div class="content-box" id="Game">
+    <div id="dos" style="width: 100vw; height: 60vw;"></div>
+    <script>
+        Dos(document.getElementById("dos"), {
+            dosboxConf: `
+[sdl]
+autolock=false
+mouse_emulation=integration
+
+[dosbox]
+title=Windows 95
+memsize=128
+
+[video]
+vmemsize=8
+vesa modelist width limit=0
+vesa modelist height limit=0
+
+[dos]
+ver=7.1
+hard drive data rate limit=0
+floppy drive data rate limit=0
+
+[cpu]
+cputype=pentium_mmx
+core=normal
+integration device=true
+
+[sblaster]
+sbtype=sb16vibra
+
+[fdc, primary]
+int13fakev86io=true
+
+[ide, primary]
+int13fakeio=true
+int13fakev86io=true
+
+[ide, secondary]
+int13fakeio=true
+int13fakev86io=true
+cd-rom insertion delay=4000
+
+[render]
+scaler=none
+
+[autoexec]
+echo off
+imgmount 2 sockdrive wss://backend.make-vm.com:8001 dos.zone diablo_109_c
+imgmount 3 sockdrive wss://backend.make-vm.com:8001 dos.zone diablo_109_d
+boot c:
+`,
+        });
+    </script>
+<br><br>
+  <p>Powered by <a target="_blank" href="https://js-dos.com/">js-dos</a>.</p>
+  </div>
+
+  
+</body>

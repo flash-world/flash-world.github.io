@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="application-name" content="copterjs" />
+		<meta name="description" content="Modern remake of the classic addicting flash game!" />
+		<meta name="author" content="Chris Leveille" />
+		<meta name="theme-color" content="#333333" />
+		<link rel="manifest" href="manifest.json" />
+		<link rel="apple-touch-icon" href="icons/icon_180x180.png" />
+		<title><%= htmlWebpackPlugin.options.title %></title>
+	</head>
+	<body style="background-color: #333333">
+		<div id="container" style="display: none">
+			<noscript>Sorry, your browser does not support JavaScript! :(</noscript>
+			<div id="pilot-label"></div>
+			<div id="pilot-label-ghost"></div>
+			<div id="high-scores-label"></div>
+			<div id="distance-label"></div>
+			<div id="best-label"></div>
+			<div id="initials-section" class="centered">
+				<span id="initials-label"></span>
+				<form id="initials-form" spellcheck="false">
+					<div id="initials-input-caret-box">
+						<div id="initials-input-caret"></div>
+						<input
+							id="initials-input"
+							name="initials-input"
+							type="text"
+							maxlength="3"
+							autocomplete="off"
+							autofocus
+						/>
+					</div>
+				</form>
+				<div id="initials-submit-label"></div>
+			</div>
+			<ul id="high-scores" class="centered"></ul>
+			<div id="backdrop"></div>
+			<div id="overlay"></div>
+			<canvas id="game-canvas"></canvas>
+			<canvas id="ghost-canvas" class="centered"></canvas>
+			<div id="controls" class="centered">
+				<img id="lmb" alt="left mouse button" />
+				<span id="controls-text">&nbsp;OR&nbsp;</span>
+				<img id="space" alt="spacebar" />
+			</div>
+		</div>
+	</body>
+</html>

@@ -2,7 +2,7 @@ function mcAddStylesheet() {
     var head = document.getElementsByTagName("head")[0];
 
     var style = document.createElement("link");
-    style.setAttribute("href", "./mcstatus/mcstatus.css");
+    style.setAttribute("href", "\mc\mcstatus\mcstatus.css");
     style.setAttribute("type", "text/css");
     style.setAttribute("rel", "stylesheet");
 
@@ -110,6 +110,13 @@ function mcPlayersToHTML(playersRaw) {
 function mcHandleStatus(parent, server, code, status) {
     var root = document.createElement("div");
     root.classList.add("mc-status-root");
+
+    // Server IP:
+    var header = document.createElement("h1");
+    header.classList.add("mc-status-header");
+    header.appendChild(document.createTextNode(server));
+    root.appendChild(header);
+
     // MOTD:
     var descriptionRaw = [{
         "bold": true,

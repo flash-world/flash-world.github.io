@@ -7,8 +7,53 @@
    <link rel="icon" type="image/x-icon" href="../Logo.png">
 </head>
 
-<body style="background-image:url(../media/lava.gif);background-repeat: repeat;background-size: 64px;">
+<body style="background: black;">
+    <script>
+        // Your JavaScript code here
+        var backgroundImages = [
+            '../mc/renders/bg1.png',
+            '../mc/renders/bg2.png',
+            '../mc/renders/bg3.png',
+            '../mc/renders/bg4.png',
+            '../mc/renders/bg5.png',
+            '../mc/renders/bg6.png',
+            '../mc/renders/bg7.png',
+            '../mc/renders/bg8.png',
+            '../mc/renders/bg9.png',
+            '../mc/renders/bg10.png',
+            '../mc/renders/bg11.png',
+            '../mc/renders/bg12.png',
+            '../mc/renders/bg13.png',
+            '../mc/renders/bg14.png',
+            '../mc/renders/bg15.png',
+            '../mc/renders/bg16.png',
+            '../mc/renders/bg17.png',
+            '../mc/renders/bg18.png',
+            '../mc/renders/bg19.png',
+            '../mc/renders/bg20.png',
+            '../mc/renders/bg21.png',
+            '../mc/renders/bg22.png',
+            '../mc/renders/bg23.png',
+            '../mc/renders/bg24.png',
 
+
+            // Add as many images as you like
+        ];
+
+        function changeBackground() {
+            var randomNumber = Math.floor(Math.random() * backgroundImages.length);
+            var selectedImage = backgroundImages[randomNumber];
+            
+            document.body.style.backgroundImage = 'url(' + selectedImage + ')';
+            document.body.style.backgroundSize = 'cover'; // Adjust as needed
+            document.body.style.backgroundRepeat = 'no-repeat'; // Adjust as needed
+            document.body.style.backgroundAttachment = 'fixed'
+        }
+
+        window.onload = function() {
+            changeBackground();
+        };
+    </script>
   <div class="navbar">
     <a href="../"><button >Home</button></a>
 
@@ -21,11 +66,9 @@
     <a href="../Contact.html"><button >Contact</button></a>
   </div>
 <div>
-    <div class="content-box" style="height: 98%;">
+    <div class="content-box" style="height: 98%;background:none;border: none;box-shadow: none;">
         <img src="../media/mclogo.png" alt="fwmc" style="text-align: center;display: block;margin: auto;">
   <h1 style="text-align: center;font-family: MC;">FlashWorldMC</h1>
-  <script type="text/javascript" src="./mcstatus/mcstatus.js"></script>
-  <div style="inherits: none;border: none;background: none;display: block;margin:auto" class="mc-status" data-mc-server="alamc.ddns.net:25577"></div>
   <div class="container">
   <div>
     <h2>Rules</h2>

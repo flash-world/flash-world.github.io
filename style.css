@@ -62,7 +62,7 @@ html {
   font-size: 2.2em;
 }
 
-.content-box p {
+.content-box p,li {
   font-size: 1.3em;
   color: white;
 }
@@ -371,13 +371,13 @@ display:flex;padding:auto;align-items:center;
 }
 div.container > div{
   text-shadow: #000000 0px 0px 3px;
-  border: outset rgb(65, 65, 65) 0.5em;
-  background: rgb(36,36,36);
-  background: linear-gradient(0deg, rgba(36,36,36,1) 0%, rgba(69,69,69,1) 14%, rgba(119,119,119,1) 79%, rgba(48,48,48,1) 100%);
+  background: rgba(18, 18, 18, 0.6);
+  border: 8px rgba(27, 27, 27, 0.6) outset;
   border-radius:1em;
   width:auto;
 margin:0.5em;
 display:block;
 flex-grow:1;
 padding: 0.6em;
+box-shadow:0px 0px 8px orange;
 }

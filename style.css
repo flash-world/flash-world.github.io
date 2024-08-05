@@ -82,24 +82,26 @@ html {
 
 
 .navbar {
-  margin: 15px;
+  margin: -1px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  width: 600px;
-  padding: 8px;
+  align-items:center;
+  vertical-align: middle;
+  width: min-content;
+  overflow:hidden;
+  padding: -3px;
   background: rgb(18, 18, 18);
-  border: 8px rgb(27, 27, 27) outset;
-  border-radius: 20px;
+  border: 6px rgb(27, 27, 27) outset;
+border-radius: 3em;
   box-shadow: 5px 5px 10px;
+  position:static;
+  flex: 1;
 }
-
-.navbar button {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+@media  {
+  
 }
-.navbar button {
+.navbar>a button {
  /* background: rgb(110,110,110);
   background: -moz-linear-gradient(180deg, rgba(110,110,110,1) 0%, rgba(93,93,93,1) 12%, rgba(125,125,125,1) 43%, rgba(64,64,64,1) 73%, rgba(32,32,32,1) 100%);
   background: -webkit-linear-gradient(180deg, rgba(110,110,110,1) 0%, rgba(93,93,93,1) 12%, rgba(125,125,125,1) 43%, rgba(64,64,64,1) 73%, rgba(32,32,32,1) 100%);
@@ -113,29 +115,47 @@ html {
   background-image: linear-gradient(to bottom, #424242, #000000);
   -webkit-border-radius: 25;
   -moz-border-radius: 25;
-  border-radius: 25px;
+  border-radius: 0px;
   color: #ffffff;
-  font-size: auto;
-  padding: 3px 13px 3px 13px;
-  border: solid #4a4a4a 2px;
+  font-size: 1em;
+
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  border: solid rgb(27, 27, 27) 0.3px;
   text-decoration: none;
+  margin: 0em;
+  line-height: 250%;
+  margin-left: 0px;
+  margin-right: 0px;
+  display: block;
+ border-bottom: none;
+ border-top:none ;
+
+ height:400%;
+ text-wrap:nowrap;
+
 }
 
-.navbar button:hover {
+.navbar>a button:hover {
   background: rgb(255,202,97);
   background: -moz-linear-gradient(180deg, rgba(255,202,97,1) 0%, rgba(255,193,41,1) 3%, rgba(252,163,0,1) 39%, rgba(215,128,0,1) 73%, rgba(217,132,0,1) 100%);
   background: -webkit-linear-gradient(180deg, rgba(255,202,97,1) 0%, rgba(255,193,41,1) 3%, rgba(252,163,0,1) 39%, rgba(215,128,0,1) 73%, rgba(217,132,0,1) 100%);
   background: linear-gradient(180deg, rgba(255,202,97,1) 0%, rgba(255,193,41,1) 3%, rgba(252,163,0,1) 39%, rgba(215,128,0,1) 73%, rgba(217,132,0,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffca61",endColorstr="#d98400",GradientType=1);
   text-decoration: none;
+  color: #000000;
 }
 
 .navbar a {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
+  margin-left: 0px;
+  margin-right: 0px;
+  display: inline-flex;
+  text-wrap:nowrap;
+  height: 100%;
 
+}
+.navbar>a img {
+margin: 0.5vw;
+}
 a {
   text-decoration: none;
 }

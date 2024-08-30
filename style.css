@@ -21,11 +21,12 @@ background: -moz-linear-gradient(180deg, rgba(255,202,97,1) 0%, rgba(255,193,41,
 background: -webkit-linear-gradient(180deg, rgba(255,202,97,1) 0%, rgba(255,193,41,1) 3%, rgba(252,163,0,1) 39%, rgba(215,128,0,1) 73%, rgba(217,132,0,1) 100%);
 background: linear-gradient(180deg, rgba(255,202,97,1) 0%, rgba(255,193,41,1) 3%, rgba(252,163,0,1) 39%, rgba(215,128,0,1) 73%, rgba(217,132,0,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffca61",endColorstr="#d98400",GradientType=1);
-  height: 100%;
+  height: 120vh;
   margin: 5px;
   margin-bottom:15px ;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  position: sticky;
 }
 hr{
   border: 5px solid  gray;
@@ -433,6 +434,7 @@ html{
 
   .content-box {
     min-width: 0px !important;
+    max-width: 82vw !important;
   }
   .navbar {
     position: relative;

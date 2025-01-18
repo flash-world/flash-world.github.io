@@ -3,15 +3,15 @@
 
 <head>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" type="text/css" href="../style.css" />
-  <title>Minecraft Server</title>
-   <link rel="icon" type="image/x-icon" href="../Logo.png">
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <title>Minecraft Server</title>
+    <link rel="icon" type="image/x-icon" href="../Logo.png">
 </head>
 
 <body style="background: black;">
-<!--
+    <!--
 ⠀⣿⡪⡪⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⢸⡯⡯⡪⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⢸⡯⡇⠪⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⢀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -39,155 +39,44 @@ this is a certified gangsta moment
 -->
     <script>
         // cool backgrounds
-        var backgroundImages = [
-            'https://alamc.ddns.net/fwmcRenders/bg1.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg2.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg3.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg4.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg5.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg6.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg7.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg8.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg9.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg10.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg11.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg12.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg13.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg14.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg15.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg16.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg17.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg18.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg19.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg20.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg21.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg22.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg23.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg24.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg25.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg26.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg27.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg28.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg29.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg30.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg31.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg32.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg33.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg34.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg35.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg36.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg37.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg38.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg39.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg40.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg41.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg42.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg43.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg44.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg45.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg46.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg47.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg48.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg49.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg50.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg51.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg52.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg53.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg54.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg55.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg56.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg57.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg58.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg59.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg60.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg61.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg62.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg63.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg64.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg65.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg66.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg67.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg68.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg69.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg70.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg71.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg72.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg73.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg74.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg75.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg76.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg77.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg78.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg79.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg80.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg81.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg82.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg83.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg84.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg85.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg86.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg87.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg88.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg89.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg90.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg91.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg92.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg93.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg94.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg95.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg96.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg97.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg98.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg99.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg100.jpg',                       
-            'https://alamc.ddns.net/fwmcRenders/bg101.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg102.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg103.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg104.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg105.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg106.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg107.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg108.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg109.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg110.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg111.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg112.jpg',
-            'https://alamc.ddns.net/fwmcRenders/bg113.jpg',
-            // yuh 
-        ];
-
+        var numofBackgrounds = 113
         function changeBackground() {
-            var randomNumber = Math.floor(Math.random() * backgroundImages.length);
-            var selectedImage = backgroundImages[randomNumber];
-            
-            document.body.style.backgroundImage = 'url(' + selectedImage + ')';
+            var randomNumber = Math.floor(Math.random() * (numofBackgrounds - 1) + 1);
+
+            document.body.style.backgroundImage = 'url(https://alamc.ddns.net/fwmcRenders/bg' + randomNumber + '.jpg)';
             document.body.style.backgroundSize = 'cover'; //cour
             document.body.style.backgroundRepeat = 'no-repeat'; // I HATE REPEAT
             document.body.style.backgroundAttachment = 'fixed'
         }
 
-        window.onload = function() {
+        window.onload = function () {
             changeBackground();
         };
     </script>
-  <div class="navbar">
-    <button onclick="window.location.href='/'">Home</button>
+    <div class="navbar">
+        <button onclick="window.location.href='/'">Home</button>
 
-    <button onclick="window.location.href='/games/'">Flash Games</button>
-    <button onclick="window.location.href='/mc/'">FlashWorldMC</button>
-    <button onclick="window.location.href='/Other.html'">Other Games</button>
+        <button onclick="window.location.href='/games/'">Flash
+            Games</button>
+        <button onclick="window.location.href='/mc/'">FlashWorldMC</button>
+        <button onclick="window.location.href='/Other.html'">Other
+            Games</button>
 
-    <button onclick="window.location.href='/htgf.html'">Get Flash</button>
-    <button onclick="window.open('https://discord.gg/dVNtZtrE8S','_blank').focus()" class="discordbtn">Discord</button>
-    <button onclick="window.location.href='https://alamc.ddns.net/hfs'">HFS</button>
-    <button onclick="window.location.href='/Contact.html'">Contact</button>
-  </div>
-<div>
-    <div class="content-box" style="background:none;border: none;box-shadow: none;overflow: hidden;">
-        <img src="../media/mclogo.png" alt="fwmc" style="text-align: center;display: block;margin: auto;">
-  <h1 style="text-align: center;font-family: MC;">FlashWorldMC<i style="font-size: 3vh;font-family: MC;">v3</i></h1>
-  <h1 style="font-size: 2vh;text-align: center;padding-top: -5px;padding-bottom: 10px;"><i>java and bedrock compatible</i></h1>
-<img src="https://api.mcstatus.io/v2/widget/java/alamc.ddns.net:25577" alt="server status widget" style="
+        <button onclick="window.location.href='/htgf.html'">Get
+            Flash</button>
+        <button onclick="window.open('https://discord.gg/dVNtZtrE8S','_blank').focus()"
+            class="discordbtn">Discord</button>
+        <button onclick="window.location.href='https://alamc.ddns.net/hfs'">HFS</button>
+        <button onclick="window.location.href='/Contact.html'">Contact</button>
+    </div>
+    <div>
+        <div class="content-box" style="background:none;border: none;box-shadow: none;overflow: hidden;">
+            <img src="../media/mclogo.png" alt="fwmc" style="text-align: center;display: block;margin: auto;">
+            <h1 style="text-align: center;font-family: MC;">FlashWorldMC<i
+                    style="font-size: 3vh;font-family: MC;">v3</i></h1>
+            <h1 style="font-size: 2vh;text-align: center;padding-top: -5px;padding-bottom: 10px;"><i>java
+                    and bedrock compatible</i></h1>
+            <img src="https://api.mcstatus.io/v2/widget/java/alamc.ddns.net:25577" alt="server status widget" style="
 margin: auto;
 margin-bottom: auto;
 width: 45%;
@@ -196,129 +85,234 @@ min-width: 16em;
 max-width: 90vw;
 margin-bottom: 4px;
 ">
-<div class="container"><div style="width: max-content;max-width: 100% !important;text-align: center;"><h2>Links</h2><p> <- <a class="content-box-a" style="font-size:2vh" href="#download">Old World</a>
-     - <a class="content-box-a" style="font-size:2vh"  href="#rules">Rules</a>
-      - <a  class="content-box-a" style="font-size:2vh" href="#ip">Server IP</a>
-       - <a class="content-box-a" style="font-size:2vh"  href="#console">Console Support</a>
-        - <a class="content-box-a" style="font-size:2vh"  href="#map">Bluemap</a>
-         - <a class="content-box-a" style="font-size:2vh"  href="#plugins">Plugins</a>
-         -> </p></div></div>
-<div class="container">
+            <div class="container">
+                <div style="width: max-content;max-width: 100% !important;text-align: center;">
+                    <h2>Links</h2>
+                    <p>
+                        <- <a class="content-box-a" style="font-size:2vh" href="#download">Old World</a>
+                            - <a class="content-box-a" style="font-size:2vh" href="#rules">Rules</a>
+                            - <a class="content-box-a" style="font-size:2vh" href="#ip">Server IP</a>
+                            - <a class="content-box-a" style="font-size:2vh" href="#console">Console Support</a>
+                            - <a class="content-box-a" style="font-size:2vh" href="#map">Bluemap</a>
+                            - <a class="content-box-a" style="font-size:2vh" href="#plugins">Plugins</a>
+                            ->
+                    </p>
+                </div>
+            </div>
+            <div class="container">
 
-    <div id="download" style="width: max-content;max-width: 100% !important;text-align: center;">
-        <h2>FlashWorld<i> v2</i> has ended!</h2>
-        <p style="padding: 20px;">I would like to give thanks to everyone who played on the server. Below is a link to download the v2 world. You may also find any other FlashWorld related files on the <a style="color:orange ;text-decoration: underline;" href="https://alamc.ddns.net/hfs/FlashWorld/" target="_blank">HFS</a> page.</p>
-        <a style="padding: 20px;" class="content-box-a" href="https://alamc.ddns.net/hfs/FlashWorld/v2Final.zip?dl" target="_blank">Download</a>
-    <br>
-    <br>
-    </div>
-</div>
-<div class="container">
-  <div id="rules" style="width: min-content;">
-    <h2>Rules</h2>
-    <p >Failure to comply may result in a <b style="color: rgb(255, 188, 63);">kick</b> or <b style="color: rgb(255, 87, 87);">ban</b></p>
-    <p ></p><ol style="list-style-position: inside;">
-        <li style="text-align: left;font-size: 1.2em;"><b>NO</b> Hacking! This also includes xray and any exploitation of a bug(e.g. duping)<p style="font-size: 0.9em !important;">This includes using clients like Wurst. We are not like other servers and duping is strictly not allowed.</p></li>
-        <li style="text-align: left;font-size: 1.2em;">Don't be an annoyance. there are other people who want to have a good time<p style="font-size: 0.9em !important;">This can go into the random griefing rule but joining the server to only "ruin" it is an issue.</p></li>
-        <li style="text-align: left;font-size: 1.2em;">Do not try to crash the server in any way<p style="font-size: 0.9em !important;">Lag Machines and such will have punishment. Running a server costs resources even if I'm doing it myself.</p></li>
-        <li style="text-align: left;font-size: 1.2em;">This is NOT an anarchy server<p style="font-size: 0.9em !important;">There are rules but there are still many freedoms on this server</p></li>
-        <li style="text-align: left;font-size: 1.2em;">No random griefing<p style="font-size: 0.9em !important;">You are allowed to attack other players but if you are on the server ruthlessly 
-            griefing and not really playing then you will be punished.</p></li>
-        <li style="text-align: left;font-size: 1.2em;">No Offline raiding<p style="font-size: 0.9em !important;">You are not allowed to raid or attack a base if the person or majority of the people who are a part of the base are offline</p></li>
-    </ol><p>Basically just have some common sense. Have fun!</p>
+                <div id="download" style="width: max-content;max-width: 100% !important;text-align: center;">
+                    <h2>FlashWorld<i> v2</i> has ended!</h2>
+                    <p style="padding: 20px;">I would like to give thanks to
+                        everyone who played on the server. Below is a link
+                        to download the v2 world. You may also find any
+                        other FlashWorld related files on the <a style="color:orange ;text-decoration: underline;"
+                            href="https://alamc.ddns.net/hfs/FlashWorld/" target="_blank">HFS</a> page.</p>
+                    <a style="padding: 20px;" class="content-box-a"
+                        href="https://alamc.ddns.net/hfs/FlashWorld/v2Final.zip?dl" target="_blank">Download</a>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="container">
+                <div id="rules" style="width: max-content;">
+                    <h2>Rules</h2>
+                    <p>Failure to comply may result in a <b style="color: rgb(255, 188, 63);">kick</b> or <b
+                            style="color: rgb(255, 87, 87);">ban</b></p>
+                    <p></p>
+                    <ol style="list-style-position: inside;">
+                        <li style="text-align: left;font-size: 1.2em;"><b>NO</b>
+                            Hacking! This also includes xray and any
+                            exploitation of a bug(e.g. duping)<p style="font-size: 0.9em !important;">This
+                                includes using clients like Wurst. We are
+                                not like other servers and duping is
+                                strictly not allowed.</p>
+                        </li>
+                        <li style="text-align: left;font-size: 1.2em;">Don't
+                            be an annoyance. there are other people who want
+                            to have a good time<p style="font-size: 0.9em !important;">This
+                                can go into the random griefing rule but
+                                joining the server to only "ruin" it is an
+                                issue.</p>
+                        </li>
+                        <li style="text-align: left;font-size: 1.2em;">Do
+                            not try to crash the server in any way<p style="font-size: 0.9em !important;">Lag
+                                Machines and such will have punishment.
+                                Running a server costs resources even if I'm
+                                doing it myself.</p>
+                        </li>
+                        <li style="text-align: left;font-size: 1.2em;">This
+                            is NOT an anarchy server<p style="font-size: 0.9em !important;">There
+                                are rules but there are still many freedoms
+                                on this server</p>
+                        </li>
+                        <li style="text-align: left;font-size: 1.2em;">No
+                            random griefing<p style="font-size: 0.9em !important;">You are
+                                allowed to attack other players but if you
+                                are on the server ruthlessly
+                                griefing and not really playing then you
+                                will be punished.</p>
+                        </li>
+                        <li style="text-align: left;font-size: 1.2em;">No
+                            Offline raiding<p style="font-size: 0.9em !important;">You are
+                                not allowed to raid or attack a base if the
+                                person or majority of the people who are a
+                                part of the base are offline</p>
+                        </li>
+                    </ol>
+                    <p>Basically just have some common sense. Have
+                        fun!</p>
 
-</div>
-<div  id="ip" style="width: min-content;">
-    <h2>Server IPs</h2>
-    <h3>Java</h3>
-    <p style="font-size:0.9em;line-height: 0.2em;"><i>Port is represented beside ip on java.</i></p>
-    <p>IP: alamc.ddns.net:25577</p>
-    <h3>Bedrock</h3>
-    <p style="font-size:0.9em;line-height: 0.2em;"><i>Port is in separate box on bedrock so it is listed separately.</i></p>
-    <p>IP: alamc.ddns.net</p>
-    <p>Port: 19132</p>
-</div>
-</div>
+                </div>
+                <div id="ip" style="width: min-content;padding: 10px;">
+                    <h2>Server IPs</h2>
+                    <h3>Java</h3>
+                    <p style="font-size:0.9em;line-height: 0.2em;"><i>Port
+                            is represented beside ip on java.</i></p>
+                    <p>IP: alamc.ddns.net:25577</p>
+                    <br>
+                    <h3>Bedrock</h3>
+                    <p style="font-size:0.9em;line-height: 0.2em;"><i>Port
+                            is in separate box on bedrock so it is listed
+                            separately.</i></p>
+                    <p>IP: alamc.ddns.net</p>
+                    <p>Port: 19132</p>
+                </div>
+            </div>
 
-<div class="container" style="flex-wrap: nowrap;">
-<div id="console" style="text-align: center;max-width: 49%;"><h2 style="text-align: center;">Playing on a Console?</h2>
-    <div style="display: flex;margin-left: auto;margin-right: auto;align-items: center;width: auto;background: rgb(255,209,19);
+            <div class="container" style="flex-wrap: nowrap;">
+                <div id="console" style="text-align: center;max-width: 49%;">
+                    <h2 style="text-align: center;">Playing on a
+                        Console?</h2>
+                    <div
+                        style="display: flex;margin-left: auto;margin-right: auto;align-items: center;width: auto;background: rgb(255,209,19);
     background: radial-gradient(circle, rgba(255,209,19,1) 0%, rgba(255,188,15,0.7624332203584558) 50%, rgba(126,126,126,0) 100%);padding-left: 20px;padding-right: 20px;">
-        <img src="../media/ps3.png" alt="ps3" style="height: 10vw;width: auto;margin: auto;">
-        <img src="../media/3dsalt.png" alt="nintender 3d es" style="height: 10vw;width: auto;margin: auto;">
-        <img src="../media/xobx.png" alt="xobx" style="height: 10vw;width: auto;margin: auto;">
+                        <img src="../media/ps3.png" alt="ps3" style="height: 10vw;width: auto;margin: auto;">
+                        <img src="../media/3dsalt.png" alt="nintender 3d es"
+                            style="height: 10vw;width: auto;margin: auto;">
+                        <img src="../media/xobx.png" alt="xobx" style="height: 10vw;width: auto;margin: auto;">
 
-    </div>
+                    </div>
 
-<p style="max-width:700px;margin: auto;text-align: justify;">Since Mojang decided to not add a add server button on console you will need to rely on a mobile device/chromebook to join. This can be achieved through either app below.</p>
-<br>
-<h3>BedrockTogether</h3>
-<a href="https://bedrocktogether.net/" class="content-box-a">(website)</a>
-<br>
-<br>
-<h3>MC Server Connector</h3>
-<a href="https://play.google.com/store/apps/details?id=com.smokiem.mcserverconnector" class="content-box-a">PlayStore</a>
-<a href="https://apps.apple.com/us/app/mc-server-connector/id1548251304" class="content-box-a">AppStore</a>
-<br>
-<br>
+                    <p style="max-width:700px;margin: auto;text-align: justify;">Since
+                        Mojang decided to not add a add server button on
+                        console you will need to rely on a mobile
+                        device/chromebook to join. This can be achieved
+                        through either app below.</p>
+                    <br>
+                    <h3>BedrockTogether</h3>
+                    <a href="https://bedrocktogether.net/" class="content-box-a">(website)</a>
+                    <br>
+                    <br>
+                    <h3>MC Server Connector</h3>
+                    <a href="https://play.google.com/store/apps/details?id=com.smokiem.mcserverconnector"
+                        class="content-box-a">PlayStore</a>
+                    <a href="https://apps.apple.com/us/app/mc-server-connector/id1548251304"
+                        class="content-box-a">AppStore</a>
+                    <br>
+                    <br>
 
-</div>
-<div id="map" style="max-width: 49%;text-align: center;">
-    <h3>Bluemap</h3>
-<img src="../media/blumap.png" alt="blue map logo" style="display: block;margin: auto;height: 40px;width: auto;border-radius: 2em;">
-<p>FlashWorldMC uses a server plugin called bluemap which shows a 3D view of the server. On the map you can fully explore the server. You can also see players on the map. Below you can open bluemap (Only available when server is running).</p>
-<iframe src="https://alamc.ddns.net/map" frameborder="0" style="width: 40vw;height: 60vh;min-width: 200px;border-radius: 10px;"></iframe>
-<p><a href="https://alamc.ddns.net/map" target="_blank" class="content-box-a">Open In A New Tab</a> | 
-<a href="http://alamc.ddns.net:8100" target="_blank" class="content-box-a">Websocket Fallback</a></p>
-<br>
-</div>
+                </div>
+                <div id="map" style="max-width: 49%;text-align: center;">
+                    <h3>Bluemap</h3>
+                    <img src="../media/blumap.png" alt="blue map logo"
+                        style="display: block;margin: auto;height: 40px;width: auto;border-radius: 2em;">
+                    <p>FlashWorldMC uses a server plugin called bluemap
+                        which shows a 3D view of the server. On the map you
+                        can fully explore the server. You can also see
+                        players on the map. Below you can open bluemap (Only
+                        available when server is running).</p>
+                    <iframe src="https://alamc.ddns.net/map" frameborder="0"
+                        style="aspect-ratio: 1/1 ;width: 38vw;min-width: 200px;border-radius: 10px;border: 8px rgba(27, 27, 27, 0.6) outset;border-radius:1em;box-shadow:0px 0px 8px orange;"></iframe>
+                    <p><a href="https://alamc.ddns.net/map" target="_blank" class="content-box-a">Open In A New Tab</a>
+                        |
+                        <a href="http://alamc.ddns.net:8100" target="_blank" class="content-box-a">Websocket
+                            Fallback</a>
+                    </p>
+                    <br>
+                </div>
 
-</div>
-<div class="container">
+            </div>
+            <div class="container">
 
-    <div id="plugins" style="width: max-content;max-width: 100% !important;text-align: center;">
-        <h2>Plugins</h2>
-        <p style="padding: 20px;">Below is a list of notable plugins on the server and links to their pages.</p>
-    
-        <br>
-        <a style="padding: 20px;" class="content-box-a" href="https://alamc.ddns.net/map/" target="_blank">Bluemap</a>
-        <br>
-        <a style="padding: 20px;" class="content-box-a" href="https://www.spigotmc.org/resources/death-chest.101066/" target="_blank">DeathChest</a>
-        <br>
-        <a style="padding: 20px;" class="content-box-a" href="https://www.spigotmc.org/resources/discord-integration-allow-minecraft-and-discord-users-to-talk-show-activity-on-discord-1-8-1-20.91088/" target="_blank">Discord Integration</a>
-        <br>
-        <a style="padding: 20px;" class="content-box-a" href="https://geysermc.org/" target="_blank">Geyser MC</a>
-        <br>
-        <a style="padding: 20px;" class="content-box-a" href="https://www.spigotmc.org/resources/imageframe-load-images-on-maps-item-frames-support-gifs-map-markers-survival-friendly.106031/" target="_blank">Image Frame</a>
-        <br>
-        <a style="padding: 20px;" class="content-box-a" href="https://github.com/Red-Teapot/NametagHider" target="_blank">NametagHider</a>
-        <br>
-        <a style="padding: 20px;" class="content-box-a" href="https://www.spigotmc.org/resources/not-too-expensive.86820/" target="_blank">Not Too Expensive</a>
-        <br>
-        <a style="padding: 20px;" class="content-box-a" href="https://www.spigotmc.org/resources/skinsrestorer.2124/" target="_blank">Skins Restorer</a>
-        <br>
-        <a style="padding: 20px;" class="content-box-a" href="https://www.spigotmc.org/resources/treecuter-1-17-1-21-%E2%9C%A8-cut-down-trees-%E2%9C%85.110213/updates" target="_blank">TreeCuter</a>
-        <br>
-        <a style="padding: 20px;" class="content-box-a" href="https://github.com/Bims-sh/twerkgrowth?tab=readme-ov-file" target="_blank">TwerkGrowth</a>       
-        <br>
-        <a style="padding: 20px;" class="content-box-a" href="https://www.spigotmc.org/resources/uberenchant.19448/" target="_blank">Uber Enchant</a>
-        <br>
-        <a style="padding: 20px;" class="content-box-a" href="https://viaversion.com/" target="_blank">ViaVersion</a>
-        <br>
-        <a style="padding: 20px;" class="content-box-a" href="https://github.com/ViaVersion/ViaBackwards/wiki" target="_blank">ViaBackwards</a>
-        <br>
-        <a style="padding: 20px;" class="content-box-a" href="https://www.spigotmc.org/resources/simple-voice-chat.93738/" target="_blank">Simple Voice Chat</a>
+                <div id="plugins" style="width: max-content;max-width: 100% !important;text-align: center;">
+                    <h2>Plugins</h2>
+                    <p style="padding: 20px;">Below is a list of notable
+                        plugins on the server and links to their pages.</p>
 
-    
-        
+                    <br>
+                    <a style="padding: 20px;" class="content-box-a" href="https://alamc.ddns.net/map/"
+                        target="_blank">Bluemap</a>
+                    <br>
+                    <a style="padding: 20px;" class="content-box-a"
+                        href="https://www.spigotmc.org/resources/death-chest.101066/" target="_blank">DeathChest</a>
+                    <br>
+                    <a style="padding: 20px;" class="content-box-a"
+                        href="https://www.spigotmc.org/resources/discord-integration-allow-minecraft-and-discord-users-to-talk-show-activity-on-discord-1-8-1-20.91088/"
+                        target="_blank">Discord Integration</a>
+                    <br>
+                    <a style="padding: 20px;" class="content-box-a" href="https://geysermc.org/" target="_blank">Geyser
+                        MC</a>
+                    <br>
+                    <a style="padding: 20px;" class="content-box-a"
+                        href="https://www.spigotmc.org/resources/imageframe-load-images-on-maps-item-frames-support-gifs-map-markers-survival-friendly.106031/"
+                        target="_blank">Image Frame</a>
+                    <br>
+                    <a style="padding: 20px;" class="content-box-a" href="https://github.com/Red-Teapot/NametagHider"
+                        target="_blank">NametagHider</a>
+                    <br>
+                    <a style="padding: 20px;" class="content-box-a"
+                        href="https://www.spigotmc.org/resources/not-too-expensive.86820/" target="_blank">Not Too
+                        Expensive</a>
+                    <br>
+                    <a style="padding: 20px;" class="content-box-a"
+                        href="https://www.spigotmc.org/resources/skinsrestorer.2124/" target="_blank">Skins Restorer</a>
+                    <br>
+                    <a style="padding: 20px;" class="content-box-a"
+                        href="https://www.spigotmc.org/resources/treecuter-1-17-1-21-%E2%9C%A8-cut-down-trees-%E2%9C%85.110213/updates"
+                        target="_blank">TreeCuter</a>
+                    <br>
+                    <a style="padding: 20px;" class="content-box-a"
+                        href="https://github.com/Bims-sh/twerkgrowth?tab=readme-ov-file" target="_blank">TwerkGrowth</a>
+                    <br>
+                    <a style="padding: 20px;" class="content-box-a"
+                        href="https://www.spigotmc.org/resources/uberenchant.19448/" target="_blank">Uber Enchant</a>
+                    <br>
+                    <a style="padding: 20px;" class="content-box-a" href="https://viaversion.com/"
+                        target="_blank">ViaVersion</a>
+                    <br>
+                    <a style="padding: 20px;" class="content-box-a"
+                        href="https://github.com/ViaVersion/ViaBackwards/wiki" target="_blank">ViaBackwards</a>
+                    <br>
+                    <a style="padding: 20px;" class="content-box-a"
+                        href="https://www.spigotmc.org/resources/simple-voice-chat.93738/" target="_blank">Simple Voice
+                        Chat</a>
+
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div style="width: max-content;margin: auto;">
+            <h2 style="
+            text-align:center;
+            color:white;
+            text-decoration:none;
+            text-shadow:0px 0px 0.4em black;
+            font-size:0.95em;">FlashWorldMC is powered by</h2>
+            <div style="margin: auto;display: flex;">
+            <img onclick="window.open('https://papermc.io/')" style="width: 9.5vw;cursor:pointer;margin:auto;flex: 1;padding: 8px;" src="https://avatars.githubusercontent.com/u/7608950?s=280&v=4" alt="PaperMC">
+            <img onclick="window.open('https://www.microsoft.com/en-us/windows-server','_blank')" style="width: 9.5vw;cursor:pointer;margin:auto;flex:1;padding: 8px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Windows_logo_-_2021.svg/800px-Windows_logo_-_2021.svg.png" alt="Windows Server">
+        </div>
+        </div>
         <br>
-    <br>
-    </div>
-</div>
-    </div>
-<div style="margin: auto;width:fit-content ;margin-bottom:20px ;">        <button style="font-size: 0.9em;margin: auto;" class="rp" onclick="window.open('https://github.com/flash-world/flash-world.github.io/issues','_blank').focus()">Report an issue</button>
-</div>
-<!-- 
+        <div style="margin: auto;width:fit-content ;margin-bottom:20px ;">
+            <button style="font-size: 0.9em;margin: auto;" class="rp"
+                onclick="window.open('https://github.com/flash-world/flash-world.github.io/issues','_blank').focus()">Report
+                an issue</button>
+                <br>
+        </div>
+        <!-- 
 why are you here?
 You're not hacking.
 You're not finding anything truly meaningful.

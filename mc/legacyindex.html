@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <title>Minecraft Server</title>
+    <link rel="icon" type="image/x-icon" href="../Logo.png">
+</head>
+
+<body style="background: black;">
+    <!--
+⠀⣿⡪⡪⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⢸⡯⡯⡪⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⢸⡯⡇⠪⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⢀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⢸⡯⡣⡨⣻⡀⠀⠀⠀⠀⠀⠀⠀⠀⡠⠚⠁⠈⢳⡀⠀⠀⠀⠀⠀⣀⠴⠖⢂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠈⣿⡪⡺⣺⡇⠀⠀⠀⠀⠀⠀⠀⣸⠁⠀⠀⠀⣀⢳⠀⠀⠀⢀⠞⠁⠀⠀⠈⢧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⢸⣮⣪⣨⣷⠀⠀⠀⠀⠀⠀⢀⡇⠀⠀⠀⠸⡏⠻⣇⠀⣰⠋⠀⠀⠀⠀⠀⢸⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⢸⣯⣪⣹⡇⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⣀⢤⠇⠀⠈⠀⠗⠀⠀⠀⠀⠀⠀⠈⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠈⣿⣿⣿⣇⡀⠀⠀⠀⠀⠀⠸⡆⠀⠀⠉⠓⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⢀⣿⠃⢸⠀⠉⠑⠲⢤⣀⠀⠀⢳⡶⠆⣠⢞⣶⠂⠀⣴⢲⣶⡄⠠⠤⠤⢤⡸⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠈⣇⠀⡘⠀⠀⠀⠀⠀⠈⠉⠒⠾⢧⣴⣟⡺⠿⣠⡄⠁⠸⣿⡿⢠⠀⢀⡞⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠘⠶⠇⠀⠀⠀⠀⠀⠠⣤⣀⣀⣤⣄⣈⣉⣒⡶⠤⠆⠀⠸⠉⠉⠰⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠙⢢⡄⠀⠀⠀⠀⠀⠀⢠⡄⠀⣽⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣴⠉⠀⠀⠀⠀⠀⠀⠀⠀⠙⠦⢠⡴⠶⠲⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢡⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⢢⡀⠀⠙⢦⡀⠀⠀⠀⢀⣠⠄
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⢧⠀⠀⠀⠀⠀⠀⠀⠀⠓⢦⣀⠀⠀⠀⠀⢹⠀⠀⠀⠉⠒⠒⠒⢻⡟⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣏⣄⠀⠀⠀⠀⠀⠀⠀⠀⡼⠉⠁⠀⠀⢀⡞⠂⠀⠀⠀⠀⠀⠀⡸⠁⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡀⠀⠀⠀⠀⠀⠀⢸⠁⠀⠀⠀⠀⣞⠀⠀⠀⠀⠀⠀⠀⡰⠃⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣧⠀⠀⠀⠀⢀⠀⠸⡄⠀⠀⠀⠀⢨⢇⠀⠀⠀⣀⡠⠞⠁⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡼⠇⠀⠀⠀⠸⣆⠀⠈⠲⠤⠤⡴⠋⠈⠉⠉⠉⠁⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣁⠀⠀⠀⠀⡀⣀⡼⢆⠀⠀⠀⠀⢱⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠉⠉⠉⠁⠀⠀⠸⡄⠀⠀⠀⠹⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠳⣄⣀⠀⣸⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀    
+this is a certified gangsta moment
+-->
+    <script>
+        // cool backgrounds
+        var numofBackgrounds = 113
+        function changeBackground() {
+            var randomNumber = Math.floor(Math.random() * (numofBackgrounds - 1) + 1);
+
+            document.body.style.backgroundImage = 'url(https://alamc.ddns.net/fwmcRenders/bg' + randomNumber + '.jpg)';
+            document.body.style.backgroundSize = 'cover'; //cour
+            document.body.style.backgroundRepeat = 'no-repeat'; // I HATE REPEAT
+            document.body.style.backgroundAttachment = 'fixed'
+        }
+
+        window.onload = function () {
+            changeBackground();
+        };
+    </script>
+    <div class="navbar">
+        <button onclick="window.location.href='/'">Home</button>
+
+        <button onclick="window.location.href='/games/'">Flash
+            Games</button>
+        <button onclick="window.location.href='/mc/'">FlashWorldMC</button>
+        <button onclick="window.location.href='/Other.html'">Other
+            Games</button>
+
+        <button onclick="window.location.href='/htgf.html'">Get
+            Flash</button>
+        <button onclick="window.open('https://discord.gg/dVNtZtrE8S','_blank').focus()"
+            class="discordbtn">Discord</button>
+        <button onclick="window.location.href='https://alamc.ddns.net/hfs'">HFS</button>
+        <button onclick="window.location.href='/Contact.html'">Contact</button>
+    </div>
+    <div>
+        <div class="content-box" style="background:none;border: none;box-shadow: none;overflow: hidden;">
+            <img src="../media/mclogo.png" alt="fwmc" style="text-align: center;display: block;margin: auto;">
+            <h1 style="text-align: center;font-family: MC;">FlashWorldMC<i
+                    style="font-size: 3vh;font-family: MC;">v5</i></h1>
+            <h1 style="font-size: 2vh;text-align: center;padding-top: -5px;padding-bottom: 10px;"><i>java
+                    forge modded server</i></h1>
+            <img src="https://api.mcstatus.io/v2/widget/java/alamc.ddns.net:25565" alt="server status widget" style="
+margin: auto;
+margin-bottom: auto;
+width: 45%;
+display: block;
+min-width: 16em;
+max-width: 90vw;
+margin-bottom: 4px;
+">
+            <div class="container">
+                <div style="width: max-content;max-width: 100% !important;text-align: center;">
+                    <h2>Links</h2>
+                    <p>
+                        <- <a class="content-box-a" style="font-size:2vh" href="#download">Modpack Download</a>
+                            - <a class="content-box-a" style="font-size:2vh" href="#rules">Rules</a>
+                            - <a class="content-box-a" style="font-size:2vh" href="#ip">Server IP</a>
+                            - <a class="content-box-a" style="font-size:2vh" href="#hfs">Other Downloads</a>
+                            - <a class="content-box-a" style="font-size:2vh" href="#mods">Mods</a>
+                            ->
+                    </p>
+                </div>
+            </div>
+            <div class="container">
+
+                <div id="download" style="width: max-content;max-width: 100% !important;text-align: center;">
+                    <h2>FlashWorldMC is now Modded!</h2>
+                    <p style="padding: 20px;">This means that the modpack below is now a requirement in order to join the server. Have fun and thank your for playing FlashWorldMC</p>
+                    <a style="padding: 20px;" class="content-box-a"
+                        href="https://alamc.ddns.net/hfs/FlashWorld/fwmcv5latest.zip?dl" target="_blank">Download</a>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="container">
+                <div id="rules" style="width: max-content;">
+                    <h2>Rules</h2>
+                    <p>Failure to comply may result in a <b style="color: rgb(255, 188, 63);">kick</b> or <b
+                            style="color: rgb(255, 87, 87);">ban</b></p>
+                    <p></p>
+                    <ol style="list-style-position: inside;">
+                        <li style="text-align: left;font-size: 1.2em;"><b>NO</b>
+                            Hacking! This also includes xray and any
+                            exploitation of a bug(e.g. duping)<p style="font-size: 0.9em !important;">This
+                                includes using clients like Wurst. We are
+                                not like other servers and duping is
+                                strictly not allowed.</p>
+                        </li>
+                        <li style="text-align: left;font-size: 1.2em;">Do
+                            not try to crash the server in any way<p style="font-size: 0.9em !important;">Lag
+                                Machines and such will have punishment.
+                                Running a server costs resources even if I'm
+                                doing it myself.</p>
+                        </li>
+                        <li style="text-align: left;font-size: 1.2em;">This
+                            is NOT an anarchy server<p style="font-size: 0.9em !important;">There
+                                are rules but there are still many freedoms
+                                on this server</p>
+                        </li>
+                        <li style="text-align: left;font-size: 1.2em;">No
+                            random griefing<p style="font-size: 0.9em !important;">You are
+                                allowed to attack other players but if you
+                                are on the server ruthlessly
+                                griefing and not really playing then you
+                                will be punished.</p>
+                        </li>
+                        <li style="text-align: left;font-size: 1.2em;">No
+                            Offline raiding<p style="font-size: 0.9em !important;">You are
+                                not allowed to raid or attack a base if the
+                                person or majority of the people who are a
+                                part of the base are offline</p>
+                        </li>
+                    </ol>
+                    <p>Basically just have some common sense. Have
+                        fun!</p>
+
+                </div>
+                <div id="ip" style="width: min-content;padding: 10px;">
+                    <h2>Server IPs</h2>
+                    <h3>Java</h3>
+                    <p style="font-size:0.9em;line-height: 1.19em;"><i>Since May 31st, 2025 the server
+                         port has been changed to the default (25565)
+                    </i></p>
+                    <p>IP: alamc.ddns.net</p>
+                                        <p style="font-size:0.9em;line-height: 1.19em;"><i>You may also include the port number if needed
+                    </i></p>
+                    <p>IP: alamc.ddns.net:25565</p>
+                    <br>
+
+                </div>
+            </div>
+
+            <div class="container" style="flex-wrap: nowrap;">
+                <div id="mods" style="text-align: center;max-width: 49%;">
+                    <h2 style="text-align: center;">Looking for mods?</h2>
+
+                    <br>
+                    <h2><a href="./mods/" target="_blank" class="content-box-a">Modlist</a></h2>
+                    <br>
+
+                </div>
+                <div id="hfs" style="max-width: 49%;text-align: center;">
+                    <h3>Other Downloads</h3>
+                   <p>Looking for world downloads and other versons of modpack files? They are in the FlashWorld HFS linked below.</p>
+                    <p><a href="https://alamc.ddns.net/hfs/FlashWorld/" target="_blank" class="content-box-a">HFS</a>   
+                    </p>
+                    <br>
+                </div>
+
+            </div>
+
+        </div>
+        <div style="width: max-content;margin: auto;">
+            <h2 style="
+            text-align:center;
+            color:white;
+            text-decoration:none;
+            text-shadow:0px 0px 0.4em black;
+            font-size:0.95em;">FlashWorldMC is powered by</h2>
+            <div style="margin: auto;display: flex;">
+            <img onclick="window.open('https://files.minecraftforge.net/net/minecraftforge/forge/index_1.18.2.html')" style="width: 9.5vw;cursor:pointer;margin:auto;flex: 1;padding: 8px;" src="../media/forge.png" alt="Forge">
+            <img onclick="window.open('https://ubuntu.com/','_blank')" style="width: 9.5vw;cursor:pointer;margin:auto;flex:1;padding: 8px;" src="../media/ubuntu.png" alt="Windows Server">
+        </div>
+        </div>
+        <br>
+        <div style="margin: auto;width:fit-content ;margin-bottom:20px ;">
+            <button style="font-size: 0.9em;margin: auto;" class="rp"
+                onclick="window.open('https://github.com/flash-world/flash-world.github.io/issues','_blank').focus()">Report
+                an issue</button>
+                <br>
+        </div>
+        <!-- 
+why are you here?
+You're not hacking.
+You're not finding anything truly meaningful.
+None of this should matter to you.
+why are you here?
+-->
+</body>
+
+</html>

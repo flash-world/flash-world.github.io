@@ -434,7 +434,7 @@ html{
     line-height: normal !important;
     font-size: 1.8vh;
     max-height: none !important;
-    min-height: 30vh !important;
+    min-height: min-content;
     padding: 10px;
     margin-bottom: 20px !important;
   }

@@ -13,62 +13,86 @@
 </head>
 
 <body>
-
-  <img style="display:block;margin:auto;max-width: 452px;width: 60vw;" src="../flashgames.png">
-  <div class="navbar">
-    <button onclick="window.location.href='/'">Home</button>
-
-    <button onclick="window.location.href='/games/'">Flash Games</button>
-    <button onclick="window.location.href='/mc/'">FlashWorldMC</button>
-    <button onclick="window.location.href='/Other.html'">Other Games</button>
-
-    <button onclick="window.location.href='/htgf.html'">Get Flash</button>
-    <button onclick="window.open('https://discord.gg/dVNtZtrE8S','_blank').focus()" class="discordbtn">Discord</button>
-    <button onclick="window.location.href='https://alamc.ddns.net/hfs'">HFS</button>
-    <button onclick="window.location.href='/Contact.html'">Contact</button>
-  </div>
-  <div class="content-box" id="GamesDiv" style="text-align: center; min-height:8em ; max-height: auto;text-align: center;">
+  <img class="imglogo" src="../media/games.png" alt="Games">
+             <div style="position: static;" class="navbar">
+        <button onclick="window.open('..')">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M341.8 72.6c-12.3-11.4-31.3-11.4-43.5 0l-224 208c-9.6 9-12.8 22.9-8 35.1C71.1 327.9 82.8 336 96 336h16v176c0 35.3 28.7 64 64 64h288c35.3 0 64-28.7 64-64V336h16c13.2 0 25-8.1 29.8-20.3 4.8-12.2 1.6-26.2-8-35.1l-224-208zM304 384h32c26.5 0 48 21.5 48 48v96H256v-96c0-26.5 21.5-48 48-48z"/></svg>
+            <p>Home</p>
+        </button>
+        <button onclick="window.open('./games')">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M448 128c106 0 192 86 192 192s-86 192-192 192H192C86 512 0 426 0 320s86-192 192-192h256zM192 240c-13.3 0-24 10.7-24 24v32h-32c-13.3 0-24 10.7-24 24s10.7 24 24 24h32v32c0 13.3 10.7 24 24 24s24-10.7 24-24v-32h32c13.3 0 24-10.7 24-24s-10.7-24-24-24h-32v-32c0-13.3-10.7-24-24-24zm240 96c-17.7 0-32 14.3-32 32s14.3 32 32 32 32-14.3 32-32-14.3-32-32-32zm64-96c-17.7 0-32 14.3-32 32s14.3 32 32 32 32-14.3 32-32-14.3-32-32-32z"/></svg>
+            <p>Games</p>
+        </button>
+        <button onclick="window.open('.')">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M288.3 61.5c19.8-11.4 44.2-11.4 64 0L528.2 163c19.8 11.4 32 32.6 32 55.4v203c0 22.9-12.2 44-32 55.4L352.3 578.5a64.158 64.158 0 01-64 0L112.5 477c-19.8-11.4-32-32.6-32-55.4v-203c0-22.9 12.2-44 32-55.4L288.3 61.5zm207.8 360V255.4l-143.8 83v166.1l143.8-83z"/></svg>
+            <p>MC Server</p>
+        </button>
+        <button onclick="window.open('https://alamc.ddns.net/hfs/', 'blank')">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M160 96c-35.3 0-64 28.7-64 64v64c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64v-64c0-35.3-28.7-64-64-64H160zm216 72c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm56 24c0-13.3 10.7-24 24-24s24 10.7 24 24-10.7 24-24 24-24-10.7-24-24zM160 352c-35.3 0-64 28.7-64 64v64c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64v-64c0-35.3-28.7-64-64-64H160zm216 72c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm56 24c0-13.3 10.7-24 24-24s24 10.7 24 24-10.7 24-24 24-24-10.7-24-24z"/></svg>
+            <p>HFS</p>
+        </button>
+        <button onclick="window.open('https://discord.gg/dVNtZtrE8S'),'blank'">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M524.5 133.8c-.2-.3-.4-.6-.8-.7-38.1-17.5-78.4-30-119.7-37.1-.4-.1-.8 0-1.1.1-.3.1-.6.4-.8.8-5.5 9.9-10.5 20.2-14.9 30.6-44.6-6.8-89.9-6.8-134.4 0-4.5-10.5-9.5-20.7-15.1-30.6-.2-.3-.5-.6-.8-.8-.3-.2-.7-.2-1.1-.2-41.3 7.1-81.6 19.6-119.7 37.1-.3.1-.6.4-.8.7-76.2 113.8-97.1 224.9-86.9 334.5 0 .3.1.5.2.8.1.3.3.4.5.6 44.4 32.9 94 58 146.8 74.2.4.1.8.1 1.1 0 .3-.1.7-.4.9-.7 11.3-15.4 21.4-31.8 30-48.8.1-.2.2-.5.2-.8 0-.3 0-.5-.1-.8-.1-.3-.2-.5-.4-.6-.2-.1-.4-.3-.7-.4-15.8-6.1-31.2-13.4-45.9-21.9-.3-.2-.5-.4-.7-.6-.2-.2-.3-.6-.3-.9 0-.3 0-.6.2-.9.2-.3.3-.5.6-.7 3.1-2.3 6.2-4.7 9.1-7.1.3-.2.6-.4.9-.4.3 0 .7 0 1 .1 96.2 43.9 200.4 43.9 295.5 0 .3-.1.7-.2 1-.2.3 0 .7.2.9.4 2.9 2.4 6 4.9 9.1 7.2.2.2.4.4.6.7.2.3.2.6.2.9 0 .3-.1.6-.3.9-.2.3-.4.5-.6.6-14.7 8.6-30 15.9-45.9 21.8-.2.1-.5.2-.7.4-.2.2-.3.4-.4.7-.1.3-.1.5-.1.8 0 .3.1.5.2.8 8.8 17 18.8 33.3 30 48.8.2.3.6.6.9.7.3.1.8.1 1.1 0 52.9-16.2 102.6-41.3 147.1-74.2.2-.2.4-.4.5-.6.1-.2.2-.5.2-.8 12.3-126.8-20.5-236.9-86.9-334.5zm-302 267.7c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.4 59.2-52.8 59.2zm195.4 0c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.2 59.2-52.8 59.2z"/></svg>
+            <p>Discord</p>
+        </button>
+    </div>
+  <div class="content-div" style="text-align: center; min-height:8em ; max-height: auto;text-align: center;">
+    <img src="../media/construction.gif" alt="under construction">
+    <p style="text-align: center;">The games page is still being overhauled. Please note that bugs may occur.</p>
     <hr>
-    <p><b>PLEASE NOTE:</b>Not all flash games may function properly. This is because of flaws with ruffle. Learn More on the report an Issue page. (Link on Home page and on Contacts page.) You may find an alternative javascript version of the game you want to play on the "Other Games" page</p>
-    <hr>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4946683261988252"
-     crossorigin="anonymous"></script>
-<!-- Small space AD -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:610px;height:90px;margin-left:auto;margin-right:auto ;"
-     data-ad-client="ca-pub-4946683261988252"
-     data-ad-slot="8099453428"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-      <div style="display:flex;text-align:center;padding:auto;align-items:center;
+
+<div  id="gamecontain">
+      <div   id="GamesDiv" style="display:flex;text-align:center;padding:auto;align-items:center;
         flex-wrap: wrap;
         align-content: center;
         justify-content: center;">
         
-<!--
-  Old method of listing games. AI generated and epic but not optimized for old platforms.
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
+      document.addEventListener("DOMContentLoaded", function() {
         const games = [
 
-          {title: "Age of War", link: "aow.html"},
-          {title: "Angry Birds", link: "ab.html"},
-          {title: "Bloons TD 1", link: "btd1.html"},
-          {title: "Bloons TD 3", link: "btd3.html"},
-          {title: "Bloons TD 4", link: "btd4.html"},
-          {title: "Bloons TD 5", link: "btd5.html"},
-          {title: "Bloxorz", link: "bloxorz.html"},
-          {title: "Breaking The Bank", link: "btb.html"},
-          {title: "Cut The Rope", link: "ctm.html"},
-          {title: "DOOM", link: "doom.html"},
-          {title: "Moto X3M", link: "motox3m.html"},
-          {title: "N", link: "N.html"},
-          {title: "Papa's Pizzeria", link: "papi.html"},
-          {title: "Portal 2D", link: "portal.html"},
-          {title: "Run", link: "run.html"},
-          {title: "Run 2", link: "run2.html"},
-          {title: "Tasty Planet", link: "TastyPlanet.html"},
+          {title: "Age of War", link: "./aow.html", img:"https://alamc.ddns.net/thumb/aow.jpg"},
+          {title: "Angry Birds", link: "ab.html", img:"https://alamc.ddns.net/thumb/ab.jpg"},
+          {title: "Bloons TD 1", link: "btd1.html", img:"https://alamc.ddns.net/thumb/btd.jpg"},
+          {title: "Bloons TD 2", link: "btd3.html", img:"https://alamc.ddns.net/thumb/btd2.jpg"},
+          {title: "Bloons TD 3", link: "btd3.html", img:"https://alamc.ddns.net/thumb/btd3.jpg"},
+          {title: "Bloons TD 4", link: "btd4.html", img:"https://alamc.ddns.net/thumb/btd4.jpg"},
+          {title: "Bloons TD 5", link: "btd5.html", img:"https://alamc.ddns.net/thumb/btd5.jpg"},
+
+          {title: "Bloxorz", link: "bloxorz.html", img:"https://alamc.ddns.net/thumb/bloxorz.jpg"},
+          {title: "Breaking The Bank", link: "btb.html", img:"https://alamc.ddns.net/thumb/btb.jpg"},
+          {title: "Cut The Rope", link: "./cuttherope/", img:"https://alamc.ddns.net/thumb/ctr.jpg"},
+          {title: "DOOM", link: "doom.html", img:"https://alamc.ddns.net/thumb/Doom.jpg"},
+          {title: "Earn to Die", link: "etd.html", img:"https://alamc.ddns.net/thumb/etd1.jpg"},
+          {title: "Earn to Die 2", link: "etd2.html", img:"https://alamc.ddns.net/thumb/etd2.jpg"},
+          {title: "Fancy Pants Adventure 1", link: "fpa1.html", img:"https://alamc.ddns.net/thumb/fpa1.jpg"},
+          {title: "Fancy Pants Adventure 2", link: "fpa2.html", img:"https://alamc.ddns.net/thumb/fpa2.jpg"},
+          {title: "Fancy Pants Adventure 3", link: "fpa3.html", img:"https://alamc.ddns.net/thumb/fpa3.jpg"},
+
+          {title: "Flappy Bird", link: "FlappyBird.html", img:"https://alamc.ddns.net/thumb/flappybird.jpg"},
+          {title: "Interactive Buddy", link: "ib.html", img:"https://alamc.ddns.net/thumb/ib.jpg"},
+          {title: "Jelly Truck", link: "jellytruck.html", img:"https://alamc.ddns.net/thumb/jellytruck.jpg"},
+          {title: "Learn to Fly 2", link: "l2f.html", img:"https://alamc.ddns.net/thumb/l2f.png"},
+          {title: "Learn to Fly 3", link: "ltf3.html", img:"https://alamc.ddns.net/thumb/ltf3.jpg"},
+
+          {title: "Moto X3M", link: "motox3m.html", img:"https://alamc.ddns.net/thumb/motox3m.jpg"},
+          {title: "N", link: "N.html", img:"https://alamc.ddns.net/thumb/N.jpg"},
+          {title: "Papa's Burgeria", link: "pabu.html", img:"https://alamc.ddns.net/thumb/pabu.png"},
+          {title: "Papa's Freezeria", link: "pafa.html", img:"https://alamc.ddns.net/thumb/pafa.jpeg"},
+
+          {title: "Papa's Pizzeria", link: "papi.html", img:"https://alamc.ddns.net/thumb/papi.jpg"},
+          {title: "Prince of Persia", link: "PoP.html", img:"https://alamc.ddns.net/thumb/PoP.png"},
+          
+          {title: "Portal 2D", link: "portal.html", img:"https://alamc.ddns.net/thumb/portal2d.jpg"},
+          {title: "Run", link: "run.html", img:"https://alamc.ddns.net/thumb/run.jpg"},
+          {title: "Run 2", link: "run2.html", img:"https://alamc.ddns.net/thumb/run2.jpg"},
+          {title: "Run 3", link: "run3.html", img:"https://alamc.ddns.net/thumb/run3.jpg"},
+
+          {title: "Tasty Planet", link: "TastyPlanet.html", img:"https://alamc.ddns.net/thumb/tp.jpg"},
+          {title: "The Impossible Quiz", link: "iq.html", img:"https://alamc.ddns.net/thumb/tiq.png"},
+          {title: "Vulpin Adventure", link: "va.html", img:"https://alamc.ddns.net/thumb/va.png"},
+          {title: "World's Hardest Game", link: "whg.html", img:"https://alamc.ddns.net/thumb/whg.jpg"},
+          {title: "World's Hardest Game 2", link: "whg2.html", img:"https://alamc.ddns.net/thumb/whg2.jpg"},
 
 
           // Add more games here as needed
@@ -76,93 +100,44 @@
         const gameList = document.getElementById("GamesDiv");
         games.forEach(game => {
           const listItem = document.createElement('div');
-          const link = document.createElement('a');
-          link.setAttribute("class", "gamelink");
-          link.textContent = game.title;
-          link.href = `games/${game.link}`;
-          listItem.appendChild(link);
+          const img = document.createElement('img');
+          //const link = document.createElement('a');
+          const title = document.createElement('p');
+          listItem.setAttribute("class", "collectiondiv");
+          img.src = `${game.img}`;
+          title.textContent = `${game.title}`
+          //link.appendChild(title);
+          listItem.setAttribute("onclick","location.href='./" + `${game.link}` + "'");
+          listItem.appendChild(img);
+          listItem.appendChild(title);
           gameList.appendChild(listItem);
-        });
-        document.body.appendChild(gameList);
-      });
-    </script>-->
- 
- <div class="collectiondiv" onclick="location.href= '/games/aow.html';"><a href="/games/aow.html" ><h3>Age of War</h3>  <img src="/thumb/aow.jpg" alt="age of war thumbnail"></a></div>
- <div class="collectiondiv" onclick="location.href= '/games/ab.html';"><a href="/games/ab.html" ><h3>Angry Birds</h3> <img src="/thumb/ab.jpg" alt="angry birds thumq"></a></div>
- <div class="collectiondiv" onclick="location.href= '/games/btd.html';"> <a href="/games/btd.html" ><h3>Bloons TD 1</h3><img src="/thumb/btd.jpg" alt="btd thumbnail"></a></div>
- <div class="collectiondiv" onclick="location.href= '/games/btd2.html';"> <a href="/games/btd2.html" ><h3>Bloons TD 2</h3><img src="/thumb/btd2.jpg" alt="btd2 thumbnail"></a></div>
- <div class="collectiondiv" onclick="location.href= '/games/btd3.html';"> <a href="/games/btd3.html" ><h3>Bloons TD 3</h3><img src="/thumb/btd3.jpg" alt="btd3 thumbnail"></a></div>
- <div class="collectiondiv" onclick="location.href= '/games/btd4.html';"> <a href="/games/btd4.html" ><h3>Bloons TD 4</h3><img src="/thumb/btd4.jpg" alt="btd4 thumbnail"></a></div>
- <div class="collectiondiv" onclick="location.href= '/games/btd5.html';"> <a href="/games/btd5.html" ><h3>Bloons TD 5</h3><img src="/thumb/btd5.jpg" alt="btd5 thumbnail"></a></div>
- <div class="collectiondiv" onclick="location.href= '/games/bloxorz.html';"> <a href="/games/bloxorz.html" ><h3>Bloxorz</h3><img src="/thumb/bloxorz.jpg" alt="bloxorz thumbnail"></a></div>
- <div class="collectiondiv" onclick="location.href= '/games/btb.html';"> <a href="/games/btb.html" ><h3>Breaking The Bank</h3><img src="/thumb/btb.jpg" alt="Breaking the Bank thumbnail"></a></div>
-<div class="collectiondiv" onclick="location.href= '/games/doom.html';"> <a href="/games/doom.html" ><h3>DOOM</h3><img src="/thumb/Doom.jpg" alt="Doom thumbnail"></a></div>
- <div class="collectiondiv" onclick="location.href= '/games/etd.html';"> <a href="/games/etd.html" ><h3>Earn to Die</h3><img src="/thumb/etd1.jpg" alt="earn to die thumbnail"></a></div>
- <div class="collectiondiv" onclick="location.href= '/games/etd2.html';"> <a href="/games/etd2.html" ><h3>Earn to Die 2</h3><img src="/thumb/etd2.jpg" alt="earntodie 2"></a></div>
- <div class="collectiondiv" onclick="location.href= '/games/fpa1.html';"> <a href="/games/fpa1.html" ><h3>Fancy Pants Adventure 1</h3><img src="/thumb/fpa1.jpg" alt="Facny pants adventure 1 thumbnail"></a></div>
- <div class="collectiondiv" onclick="location.href= '/games/fpa2.html';"> <a href="/games/fpa2.html" ><h3>Fancy Pants Adventure 2</h3><img src="/thumb/fpa2.jpg" alt="Facny pants adventure 2 thumbnail"></a></div>
-<div class="collectiondiv" onclick="location.href= '/games/fpa3.html';"> <a href="/games/fpa3.html" ><h3>Fancy Pants Adventure 3</h3><img src="/thumb/fpa3.jpg" alt="Facny pants adventure 3 thumbnail"></a></div>
-<div class="collectiondiv" onclick="location.href= '/games/Flappy Bird.html';"> <a href="/games/Flappy Bird.html" ><h3>Flappy Bird</h3><img src="/thumb/flappybird.jpg" alt="Flappy Bird thumbnail"></a></div>
- <div class="collectiondiv" onclick="location.href= '/games/ib.html';"> <a href="/games/ib.html" ><h3>Interactive Buddy</h3><img src="/thumb/ib.jpg" alt="interactive buddy thumbnail"></a></div>
- <div class="collectiondiv" onclick="location.href= '/games/jellytruck.html';"> <a href="/games/jellytruck.html" ><h3>Jelly Truck</h3><img src="/thumb/jellytruck.jpg" alt="jelly truck thumbnail"></a></div>
- <div class="collectiondiv" onclick="location.href= '/games/l2f.html';"> <a href="/games/l2f.html" ><h3>Learn to Fly 2</h3><img src="/thumb/l2f.png" alt="learn to fly 2 thumbnail"></a></div>
+        document.getElementById("gamecontain").appendChild(gameList);
+      })
+    });
+    </script>
 
- <div class="collectiondiv" onclick="location.href= '/games/ltf3.html';"> <a href="/games/ltf3.html" ><h3>Learn to Fly 3</h3><img src="/thumb/ltf3.jpg" alt="learn to fly 3 thumbnail"></a></div>
-
- <div class="collectiondiv" onclick="location.href= '/games/motox3m.html';"> <a href="/games/motox3m.html" ><h3>Moto X3M</h3><img src="/thumb/motox3m.jpg" alt="moto x3m thumbnail"></a></div>
- <div class="collectiondiv" onclick="location.href= '/games/N.html';"> <a href="/games/N.html" ><h3>N</h3><img src="/thumb/N.jpg" alt="N thumbnail"></a></div>
- <div class="collectiondiv" onclick="location.href= '/games/pabu.html';"> <a href="/games/pabu.html" ><h3>Papa's Burgeria</h3><img src="/thumb/pabu.png" alt="papas burgeria"></a></div>
-
- <div class="collectiondiv" onclick="location.href= '/games/pafa.html';"> <a href="/games/pafa.html" ><h3>Papa's Freezeria</h3><img src="/thumb/pafa.jpeg" alt="papas freezeria"></a></div>
- 
- <div class="collectiondiv" onclick="location.href= '/games/papi.html';"> <a href="/games/papi.html" ><h3>Papa's Pizzeria</h3><img src="/thumb/papi.jpg" alt="papas pizzeria"></a></div>
- <div class="collectiondiv" onclick="location.href= '/games/PoP.html';"> <a href="/games/PoP.html" ><h3>Prince of Persia</h3><img src="/thumb/PoP.png" alt="Prince of Persia"></a></div>
- 
- <div class="collectiondiv" onclick="location.href= '/games/portal.html';"> <a href="/games/portal.html" ><h3>Portal 2D</h3><img src="/thumb/portal2d.jpg" alt="portal thumbnail"></a></div>
- <div class="collectiondiv" onclick="location.href= '/games/run.html';"> <a href="/games/run.html" ><h3>Run</h3><img src="/thumb/run.jpg" alt="Run thumbnail"></a></div>
- <div class="collectiondiv" onclick="location.href= '/games/run2.html';"> <a href="/games/run2.html" ><h3>Run 2</h3><img src="/thumb/run2.jpg" alt="Run 2 thumbnail"></a></div>
- <div class="collectiondiv" onclick="location.href= '/games/run3.html';"> <a href="/games/run3.html" ><h3>Run 3</h3><img src="/thumb/run3.jpg" alt="run3 thumbnail"></a></div>
- <div class="collectiondiv" onclick="location.href= '/games/TastyPlanet.html';"> <a href="/games/TastyPlanet.html" ><h3>Tasty Planet</h3><img src="/thumb/tp.jpg" alt="TastyPlanet thumbnail"></a></div>
- <div class="collectiondiv" onclick="location.href= '/games/iq.html';"> <a href="/games/iq.html" ><h3>The Impossible Quiz</h3><img src="/thumb/tiq.png" alt="the Impossible Quiz thumbnail"></a></div>
- <div class="collectiondiv" onclick="location.href= '/games/va.html';"> <a href="/games/va.html" ><h3>Vulpin Adventure</h3><img src="/thumb/va.png" alt="Vulpin Adventure thumbnail"></a></div>
- <div class="collectiondiv" onclick="location.href= '/games/whg.html';"> <a href="/games/whg.html" ><h3>World's Hardest Game</h3><img src="/thumb/whg.jpg" alt="worlds hardest game thumbnail"></a></div>
- <div class="collectiondiv" onclick="location.href= '/games/whg2';"> <a href="/games/whg2.html" ><h3>World's Hardest Game 2</h3><img src="/thumb/whg2.jpg" alt="worlds hardest game 2 thumbnail"></a></div>
 </div>
 
  <!-- 
     Basic Code for each Item
    <div class="collectiondiv"> <a href="/games/" class="gamelink"></a></div>
    -->
+
+</div>
    <hr>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4946683261988252"
-     crossorigin="anonymous"></script>
-<!-- Small space AD -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:610px;height:90px;margin-left:auto;margin-right:auto ;"
-     data-ad-client="ca-pub-4946683261988252"
-     data-ad-slot="8099453428"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<h1>Want a game to get added?</h1>
+<div id="endofpage" style="text-align: center;display: block;width: fit-content;margin: auto;"><h1 style="text-align: center;">Want a game to get added?</h1>
     <p>Submit a game below!</p>
-    <h2 style="display: block;margin: auto;text-align: center;">Submit a game to be added</h1>
-      <a style="display: block;margin: auto;text-align: center;margin-top:10px ;" 
-        href=" https://forms.gle/rXj8L5FXQqfYvFiY7"><button class="glfo">Submit Game (Google
-          Forms)</button></a>
-          <br>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4946683261988252"
-     crossorigin="anonymous"></script>
-<!-- Small space AD -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:610px;height:90px;margin-left:auto;margin-right:auto ;"
-     data-ad-client="ca-pub-4946683261988252"
-     data-ad-slot="8099453428"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+                <button style="margin: auto;display: block;" onclick="window.open('https://forms.gle/rXj8L5FXQqfYvFiY7','blank')">
+                    <div>
+
+                    <p>Submit a Game</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z"/></svg>
+                   </div>
+                </button>    
+
     <hr>
-    <p><i>Last updated: 6:19 EST September 6, 2024</i></p>
+    <p><i>Last updated: 2:00PM EDT December 18, 2025</i></p></div>
+
   </div>
 </div>
 

@@ -2,7 +2,7 @@ function mcAddStylesheet() {
     var head = document.getElementsByTagName("head")[0];
 
     var style = document.createElement("link");
-    style.setAttribute("href", "\mc\mcstatus\mcstatus.css");
+    style.setAttribute("href", "./mcstatus/mcstatus.css");
     style.setAttribute("type", "text/css");
     style.setAttribute("rel", "stylesheet");
 

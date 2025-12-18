@@ -1,278 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <title>Flash World - Home</title>
-  <link rel="icon" type="image/x-icon" href="/media/fworb.png">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4946683261988252"
-    crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - FlashWorld</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./media/fworb.png" type="image/x-icon">
 </head>
-
-<body style="overflow-x: hidden;">
-
-  <img style="display:block;margin:auto;max-width: 50em;width:80vw;" src="./media/flashworld.png">
-  <div class="navbar">
-    <button onclick="window.location.href='/'">Home</button>
-
-    <button onclick="window.location.href='/games/'">Flash Games</button>
-    <button onclick="window.location.href='/mc/'">FlashWorldMC</button>
-    <button onclick="window.location.href='/Other.html'">Other Games</button>
-
-    <button onclick="window.location.href='/htgf.html'">Get Flash</button>
-    <button onclick="window.open('https://discord.gg/dVNtZtrE8S','_blank').focus()" class="discordbtn">Discord</button>
-    <button onclick="window.location.href='https://alamc.ddns.net/hfs'">HFS</button>
-    <button onclick="window.location.href='/Contact.html'">Contact</button>
-  </div>
-
-  <div class="content-box" style="text-align: center;">
-    <img src="./media/fworb.png" alt="fwlogo" style="width: 10em;">
-    <h1 style="text-align: center;">Welcome to Flash World!</h1>
-    <div style="display:flex;margin: auto;max-width: 640px;align-items: center;">
-      <div style="margin-right:2px ;">
-        <p style="text-align: left;">Welcome to
-          Flash World! A great website dedicated to playing iconic and fun
-          flash
-          games. If you're on an old
-          device with flash support you can natively run them in flash player.
-          If you don't have flash player you can play
-          through ruffle emulation! You may also find some of your favorite
-          Javascript titles.</p>
-      </div>
-      <div style="display: block;">
-
-        <img src="./media/flash.png" alt="flash logo" height="60px;" style="margin:8px;" width="auto">
-        <img src="./media/ruffle.png" alt="ruffle logo" height="60px;" style="margin:8px;" width="auto">
-        <img src="./media/js.png" alt="Javascript logo" height="60px;" style="margin:8px;" width="auto">
-      </div>
+<body>
+    <div class="header">
+        <img class="imglogo" src="./media/fwlogo.png" alt="FlashWorld Logo">
     </div>
-        <div style="display:flex;margin: auto;max-width: 640px;align-items: center;">
-      <div style="margin-right:2px ;">
-        <p style="text-align: center;color: gold;"><b>Important Announcement</b></p>
-        <p style="text-align: left;">
-          We are currently planning to redesign and recode the website as a whole this will be a long process 
-          that will greatly benefit the quality of FlashWorld. During this time there may be bugs on the website which can be 
-          reported using the "Report An Issue" Button at the bottom of the majority of pages. New features are planning to be added such as:
-          <ul style="text-align: left;size: smaller;padding: 10px;">
-            <li>Forums</li>
-            <li>Themes</li>
-            <li>Dedicated Page for other websites</li>
-            <li>A login management system for preferences</li>
-            <li>A supporters page</li>
-            <li>Advertisements are also planning to be removed in favor of support from donations</li>
-          </ul>
-          Thank you for your time and have fun on FlashWorld
+        <div class="navbar">
+        <button>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M341.8 72.6c-12.3-11.4-31.3-11.4-43.5 0l-224 208c-9.6 9-12.8 22.9-8 35.1C71.1 327.9 82.8 336 96 336h16v176c0 35.3 28.7 64 64 64h288c35.3 0 64-28.7 64-64V336h16c13.2 0 25-8.1 29.8-20.3 4.8-12.2 1.6-26.2-8-35.1l-224-208zM304 384h32c26.5 0 48 21.5 48 48v96H256v-96c0-26.5 21.5-48 48-48z"/></svg>
+            <p>Home</p>
+        </button>
+        <button>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M448 128c106 0 192 86 192 192s-86 192-192 192H192C86 512 0 426 0 320s86-192 192-192h256zM192 240c-13.3 0-24 10.7-24 24v32h-32c-13.3 0-24 10.7-24 24s10.7 24 24 24h32v32c0 13.3 10.7 24 24 24s24-10.7 24-24v-32h32c13.3 0 24-10.7 24-24s-10.7-24-24-24h-32v-32c0-13.3-10.7-24-24-24zm240 96c-17.7 0-32 14.3-32 32s14.3 32 32 32 32-14.3 32-32-14.3-32-32-32zm64-96c-17.7 0-32 14.3-32 32s14.3 32 32 32 32-14.3 32-32-14.3-32-32-32z"/></svg>
+            <p>Games</p>
+        </button>
+        <button onclick="window.open('./mc/')">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M288.3 61.5c19.8-11.4 44.2-11.4 64 0L528.2 163c19.8 11.4 32 32.6 32 55.4v203c0 22.9-12.2 44-32 55.4L352.3 578.5a64.158 64.158 0 01-64 0L112.5 477c-19.8-11.4-32-32.6-32-55.4v-203c0-22.9 12.2-44 32-55.4L288.3 61.5zm207.8 360V255.4l-143.8 83v166.1l143.8-83z"/></svg>
+            <p>MC Server</p>
+        </button>
+        <button onclick="window.open('https://alamc.ddns.net/hfs/', 'blank')">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M160 96c-35.3 0-64 28.7-64 64v64c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64v-64c0-35.3-28.7-64-64-64H160zm216 72c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm56 24c0-13.3 10.7-24 24-24s24 10.7 24 24-10.7 24-24 24-24-10.7-24-24zM160 352c-35.3 0-64 28.7-64 64v64c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64v-64c0-35.3-28.7-64-64-64H160zm216 72c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm56 24c0-13.3 10.7-24 24-24s24 10.7 24 24-10.7 24-24 24-24-10.7-24-24z"/></svg>
+            <p>HFS</p>
+        </button>
+        <button onclick="window.open('https://discord.gg/dVNtZtrE8S'),'blank'">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M524.5 133.8c-.2-.3-.4-.6-.8-.7-38.1-17.5-78.4-30-119.7-37.1-.4-.1-.8 0-1.1.1-.3.1-.6.4-.8.8-5.5 9.9-10.5 20.2-14.9 30.6-44.6-6.8-89.9-6.8-134.4 0-4.5-10.5-9.5-20.7-15.1-30.6-.2-.3-.5-.6-.8-.8-.3-.2-.7-.2-1.1-.2-41.3 7.1-81.6 19.6-119.7 37.1-.3.1-.6.4-.8.7-76.2 113.8-97.1 224.9-86.9 334.5 0 .3.1.5.2.8.1.3.3.4.5.6 44.4 32.9 94 58 146.8 74.2.4.1.8.1 1.1 0 .3-.1.7-.4.9-.7 11.3-15.4 21.4-31.8 30-48.8.1-.2.2-.5.2-.8 0-.3 0-.5-.1-.8-.1-.3-.2-.5-.4-.6-.2-.1-.4-.3-.7-.4-15.8-6.1-31.2-13.4-45.9-21.9-.3-.2-.5-.4-.7-.6-.2-.2-.3-.6-.3-.9 0-.3 0-.6.2-.9.2-.3.3-.5.6-.7 3.1-2.3 6.2-4.7 9.1-7.1.3-.2.6-.4.9-.4.3 0 .7 0 1 .1 96.2 43.9 200.4 43.9 295.5 0 .3-.1.7-.2 1-.2.3 0 .7.2.9.4 2.9 2.4 6 4.9 9.1 7.2.2.2.4.4.6.7.2.3.2.6.2.9 0 .3-.1.6-.3.9-.2.3-.4.5-.6.6-14.7 8.6-30 15.9-45.9 21.8-.2.1-.5.2-.7.4-.2.2-.3.4-.4.7-.1.3-.1.5-.1.8 0 .3.1.5.2.8 8.8 17 18.8 33.3 30 48.8.2.3.6.6.9.7.3.1.8.1 1.1 0 52.9-16.2 102.6-41.3 147.1-74.2.2-.2.4-.4.5-.6.1-.2.2-.5.2-.8 12.3-126.8-20.5-236.9-86.9-334.5zm-302 267.7c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.4 59.2-52.8 59.2zm195.4 0c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.2 59.2-52.8 59.2z"/></svg>
+            <p>Discord</p>
+        </button>
+    </div>
+    <div class="content-div">
+        <img class="nobg" src="./media/fworb.png" alt="FlashWorld Logo">
+        <h1>Welcome to FlashWorld!</h1>
+        <p>Welcome to Flash World! A great website orignally dedicated to playing iconic and fun flash games.
+            Since then, FlashWorld's game library has grown, and still continues to grow. FlashWorld has also since then provided new services.
+            At the current moment we offer, games, a free to use online file server, and a Minecraft server.
         </p>
-      </div>
-
-    </div>
-    <div style="display:flex;margin: auto;max-width: 640px;align-items: center;">
-      <div style="margin-right:2px ;">
-        <p style="text-align: center;color: gold;"><b>Announcement Regarding
-            Games</b></p>
-        <p style="text-align: left;">
-          Since the start of September FlashWorld is moving towards hosting
-          larger files on external sources rather than individually with each
-          website. This will be an effort to further optimize the website
-          and to prevent problems in the future. Thank you for your
-          understanding.
-        </p>
-      </div>
-
-    </div>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4946683261988252"
-      crossorigin="anonymous"></script>
-    <!-- Small space AD -->
-    <ins class="adsbygoogle" style="display:inline-block;width:610px;height:90px;margin-left:auto;margin-right:auto ;"
-      data-ad-client="ca-pub-4946683261988252" data-ad-slot="8099453428"></ins>
-    <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-
-    <div style="display:flex;margin: auto;max-width: 640px;align-items: center;">
-      <div style="margin-right:2px ;">
-        <p style="text-align: left;"><b>Why the
-            ads?</b>
-          Advertising on Flash World is our only method to provide funding. Ad
-          revenue can help with improving the quality of the website and can
-          fund for a proper
-          and memorable domain name. Thank you for your understanding.
-        </p>
-      </div>
-      <div style="display: block;">
-
-        <img src="./media/adsense.svg" alt="adsense logo" height="90px;" style="margin:8px;" width="auto">
-      </div>
-    </div>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4946683261988252"
-      crossorigin="anonymous"></script>
-    <!-- Small space AD -->
-    <ins class="adsbygoogle" style="display:inline-block;width:610px;height:90px;margin-left:auto;margin-right:auto ;"
-      data-ad-client="ca-pub-4946683261988252" data-ad-slot="8099453428"></ins>
-    <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    <p style="color: rgb(179, 179, 179);text-align: center;max-width:400px;margin: auto;">Please
-      note that moblie support is still a work in progress and this website is
-      best viewed on a destop.</p>
-    <br>
-    <p style="color: rgb(179, 179, 179);text-align: center;line-height: 0.2;">Note
-      for users on old devices:</p>
-    <p style="color: rgb(179, 179, 179);text-align: center;"><i>1024x768 and
-        at least 1GB of RAM recommended</i></p>
-    <hr>
-
-    <h1 style="text-align: center;">We now have a minecraft server!</h1>
-    <img src="./media/mclogo.png" alt="fwmc logo" style="display: block;text-align: center;margin: auto;">
-    <h2 style="text-align: center;">FlashWorldMC</h2>
-    <p style="text-align: center;" style="color: gray;"><i>Bedrock and Java
-        Compatible</i></p>
-    <p style="text-align: center;"><a href="./mc/" class="content-box-a">Learn
-        More</a></p>
-
-    <hr>
-    <a title="watching grass grow" href="https://www.watching-grass-grow.com/ " class="content-box-a"
-      style="text-align: center;display:block;margin:auto;">Watching
-      Grass Grow</a>
-    <p style="text-align: center;display:block;margin:auto;">Got nothing else
-      better to do?
-    <p>
-      <a href="https://www.watching-grass-grow.com/"><img style="border:2px solid green;display:block;margin:auto;"
-          src="https://www.watching-grass-grow.com/watching-grass-grow.gif" alt="watching grass grow"
-          title="watching grass grow"></a>
-
-      <hr>
-    <h1 style="text-align: center;">Cool Websites</h1>
-    <div
-      style="display:flex-box;flex-direction: row;flex-wrap: wrap;align-content: center;align-self:center; padding:5px;">
-      <div style="display:flex;flex-direction: row;flex-wrap: wrap;align-content: center;">
-        <div class="fdiv">
-          <div>
-            <img class="icon" src="https://infinitemac.org/favicon.ico" alt="Infinite Mac Logo">
-            <h3>Infinite Mac</h3>
-          </div>
-          <div style:flex-direction:column;>
-            <img class="fthumb" src="./media/infinite-mac-2022.png" alt>
-
-            <p>Infinite mac is a website that lets you emulate old Macs in
-              your browser.</p><button onclick="location.href='https://infinitemac.org/';">Go to
-              website</button>
-          </div>
+        <hr>
+        <h1>Theres more to come</h1>
+            <p>
+                As mentioned previously this is still a growing website, and still a relatively new one. More features are planning to be added such as, user preferences, forums, and more ways for our growing community to use FlashWorld.  
+            </p>
+        <hr>
+        <h1>Also, Welcome to the new website!</h1>
+        <div class="column">
+            <div>        
+                <img src="./media/images/fwold.png" alt="Screenshot of Old FLashWorld">
+                <p class="note">Screenshot of Old FlashWorld</p>
+            </div>
+            <div>
+                 <img src="./media/images/fwnew.png" alt="Screenshot of New FLashWorld">
+                <p class="note">Screenshot of New FlashWorld</p>
+            </div>
 
         </div>
-        <div class="fdiv">
-          <div>
-            <img class="icon" src="https://monozone.netlify.app/miwlogo2.ico" alt="monozone logo">
-            <h3>monozone.netlify.app</h3>
-          </div>
-          <div style:flex-direction:column;>
-            <img class="fthumb" src="https://monozone.netlify.app/media/homelogo%202.png" alt="full monochome logo">
-
-            <p>This is one of my old websites. It has some games. A cool
-              photo gallery that I worked on. It has a unique more late
-              90s very early 2000s style to it. I will not make any futher
-              updates to this website.</p><button onclick="location.href='https://monozone.netlify.app/';">Go
-              to website</button>
-          </div>
-
-        </div>
-      </div>
-      <div style="display:flex;flex-direction: row;flex-wrap: wrap;align-content: center;">
-        <div class="fdiv">
-          <div>
-            <img class="icon" src="https://alamc.netlify.app/server-icon-2.png" alt="alamc logo">
-            <h3>ALAMC</h3>
-          </div>
-          <div style:flex-direction:column;>
-
-            <img src="https://alamc.netlify.app/yeah.gif" alt="gif from alamc website" style="width: 100%;">
-            <p>The ALAMC Minecraft server page. It's successor is <a style=" font-size: 1.3em;padding: 0;margin: 0;" class="content-box-a" href="./mc/">FlashWorldMC</a>. This website remains up for archival
-              purposes</p>
-            <p>alamc.ddns.net(one of its domains) is now
-              used for Flash World</p><button onclick="location.href='https://alamc.netlify.app/';">Go to
-              website</button>
-          </div>
-
-        </div>
-
-        <div class="fdiv">
-          <div>
-            <img class="icon" src="https://meow.camera/logo.png" alt="meow.camera icon">
-            <h3>meow.camera</h3>
-          </div>
-          <div style:flex-direction:column;>
-            <img class="fthumb" src="https://i.kym-cdn.com/entries/icons/original/000/048/010/side_eye_cat.jpg" alt>
-
-            <p>meow.camera is an alternative viewer for feeders from the
-              Hello Street
-              Cat / JieMao (街猫) app. The hello street cat app provides a
-              platform for many cat feeders around china
-              which can have food dispensed to them through the
-              app.</p>
-            <p><i style="color:gray;font-size:0.9em;background:black;">Images
-                and Description sourced from meow.camera.</i></p><button
-              onclick="location.href='https://meow.camera/';">Go to
-              website</button>
-          </div>
-
-        </div>
-      </div>
+        <br>
+        <p>Long time users of FlashWorld will have probably noticed the new re-design. Hopefully you find it an improvement from the old one! Please note that not every feature of the old website may be fully re-implemented. But rest assured any needed missing content is to be reimplemented.</p>
+        <hr>
+        <h1>Other Cool Websites</h1>
+        <p class="note" style="text-align: center;font-weight: 800;">The new FlashWorld re-design is still in progess. Bugs may occur.</p>
+        <div style="display: block;margin: auto;width: min-content;"><script type="text/javascript" src="https://counter.websiteout.com/js/7/0/0/1"></script></div>
+        
     </div>
-    <hr>
-
-    <div align='center'>
-      <p>Flash world has had:</p>
-      <script type="text/javascript" src="https://counter.websiteout.com/js/7/0/0/1"></script>
-      <p>Visits
-        since 8/14/2025</p>
-    </div>
-    <div>
-      <p>FlashWorld was established  February 7th, 2024</p>
-    </div>
-    <br>
-
-    <hr>
-    <div>
-      <button style="font-size: 0.9em;" class="rp"
-        onclick="window.open('https://github.com/flash-world/flash-world.github.io/issues','_blank').focus()">Report
-        an issue</button>
-
-    </div>
-  </div>
-  <!--
-  
-⠀⠀⠀⠀⠀⣤⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⣸⣿⣿⣿⣶⣄⠀⠀⠀⠀⠀⠀⠀⢻⣷⣦⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣤⣠⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⢀⣿⣿⣿⣿⣿⣿⣿⡀⠴⣾⣿⣿⣿⣤⣿⣿⣿⣿⣷⣦⣄⠀⠀⠀⠀⠀⠀⣀⣤⣾⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⣼⣿⣿⣿⣿⣿⣿⣿⣿⣷⣤⡙⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⣀⠀⠀⣤⣾⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣦⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣾⣾⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢹⣿⢸⣿⣿⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⢻⣿⣿⡿⠿⠟⠻⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣌⣃⣼⣿⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⢀⣠⣤⣴⣿⣿⣍⣠⣶⣶⣶⣦⡈⢻⣿⣿⣿⣿⣿⣿⡿⠟⠋⠉⠋⠉⠛⢿⣿⣿⣿⣿⣿⠅⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠈⠛⠛⠛⣿⣿⣿⣿⣿⣿⣿⣿⣿⠾⠿⣿⣿⣿⣿⣿⣤⣴⣶⣿⣿⣷⣶⣀⢹⣿⣿⣤⣶⣶⡶⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⣰⣯⣛⣉⢩⡟⠟⢿⣿⣿⣦⣤⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⢰⠿⠿⠟⠳⣤⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⢿⣿⣿⣿⣍⣀⡤⠀⠝⢉⣹⣿⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠉⠻⠿⣿⣿⣦⣉⣡⣬⣙⣁⣼⣿⣿⣿⣿⣿⣿⣷⠾⠟⠻⢿⡿⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⢉⣹⣿⣿⣿⣿⣿⣿⣿⣉⣉⣭⣍⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠻⠿⣷⣾⣿⣿⣿⣿⣿⣿⡿⠟⣓⣈⣅⣙⡿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⣿⣿⣿⣿⣿⡟⢋⣤⣴⣿⣿⣿⣿⣿⣿⣧⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠾⠿⢿⣿⣿⣿⠏⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣾⣿⣿⣿⣦⠹⡇⣾⣿⣧⢹⣿⡿⠛⢻⣿⣿⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡆⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣿⣿⣿⣿⣶⣤⣀⣉⣁⠈⠠⣤⣶⣿⣿⣿⣿⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣹⣆⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⣿⣿⣿⣿⣿⣿⣿⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡄⠀⢰⣿⣿⣧⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣧⢹⣿⣿⣿⣆⢻⣿⣿⣿⣿⣿⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣾⣧⠀⣾⣿⣿⣿⣧⡀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⣿⣿⣿⣿⣿⣿⡈⢿⣿⣿⣿⣦⣙⠛⠛⢋⡁⠀⢀⠀⠀⠀⠀⠀⠀⠀⠀⣰⣿⣿⣿⣰⣿⣿⣿⣿⣿⣷⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣤⢀⣿⣿⣿⣿⣿⣿⡇⢸⣿⣿⣿⣿⣿⣿⣿⣿⣷⣿⣁⡀⠀⠀⠀⠀⣀⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⣴⣿⣿⢰⣿⣿⣿⣿⣿⣿⣿⢰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣏⢡⣠⣤⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇
-⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⡄⢽⣿⣿⣿⣿⣿⣿⢌⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠆⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠇
-
-
--->
+    
 </body>
-
 </html>

@@ -1,29 +1,22 @@
-@media only screen and (max-width: 980px) {
-
-    .mc-status{font-size:1.2vh ;text-align: center;}
-
-    
-}
-@font-face {
-    font-family: MC2;
-    src: url('./Minecraft.ttf');
-}
 .mc-status {
     overflow-x: auto;
 }
 
 .mc-status-root {
     display: inline-block;
-    background-color: #00000000;
-    color: #ffffff;
-
-
+    background-color: #ffffff;
+    color: #000000;
+    backdrop-filter: blur(10px);
+    border-style: solid;
+    border-width: 2px;
+    border-color: #444;
+    border-radius: 5px;
 }
 
 .mc-status-header {
     color: inherit;
-    font-family:monospace;
-
+    font-family: monospace;
+    font-size: 24px;
     padding: 10px;
     margin: 0;
 }
@@ -31,7 +24,8 @@
 .mc-description {
     white-space: pre;
     font-family: monospace;
-    background-color: #0000007e;
+    font-size: 18px;
+    background-color: #000;
     color: #bebebe;
 
     width: 53ch;
@@ -62,8 +56,8 @@
 .mc-players {
     color: inherit;
     padding: 10px;
-    font-family: sans-serif;
-    font-weight: bold;
+    font-family: monospace;
+    font-size: 18px;
 }
 
 .mc-players-count {

@@ -1,54 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="stylesheet" type="text/css" href="../style.css"/>
-  <title>Minecraft Server</title>
-   <link rel="icon" type="image/x-icon" href="/Logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MC Server - FlashWorld</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../media/fworb.png" type="image/x-icon">
 </head>
+    <script src="./bg.js"></script>
+<body style="background-image: none; background-color: black;">
 
-<body style="background: black;">
-     <script type="text/javascript"  src="bg.js"></script>
-  <div class="navbar">
-    <button onclick="window.location.href='/'">Home</button>
 
-    <button onclick="window.location.href='/games/'">Flash Games</button>
-    <button onclick="window.location.href='/mc/'">FlashWorldMC</button>
-    <button onclick="window.location.href='/Other.html'">Other Games</button>
-
-    <button onclick="window.location.href='/htgf.html'">Get Flash</button>
-    <button onclick="window.open('https://discord.gg/dVNtZtrE8S','_blank').focus()" class="discordbtn">Discord</button>
-    <button onclick="window.location.href='https://alamc.ddns.net/hfs'">HFS</button>
-    <button onclick="window.location.href='/Contact.html'">Contact</button>
-  </div>
-<div>
-    <div class="content-box" style="background:none;border: none;box-shadow: none;overflow: hidden;">
-        <img src="../media/mclogo.png" alt="fwmc" style="text-align: center;display: block;margin: auto;">
-  <h1 style="text-align: center;font-family: MC;">FlashWorldMC VI</h1>
-<img src="https://api.mcstatus.io/v2/widget/java/alamc.ddns.net:25565" alt="server status widget" style="margin: auto;width: 30%;display: block;min-width: 21em;">
-            <div class="container">
-                <div style="width: max-content;max-width: 100% !important;text-align: center;">
-                    <h2>Links</h2>
-                    <p>
-                            <-
-                            - <a class="content-box-a" style="font-size:2vh" href="#rules">Rules</a>
-                            - <a class="content-box-a" style="font-size:2vh" href="#ip">Server IP</a>
-                            - <a class="content-box-a" style="font-size:2vh" href="#Console">On A Console?</a>
-                            - <a class="content-box-a" style="font-size:2vh" href="#map">Map</a>
-                            ->
+    <img class="imglogo" src="../media/fwmcbig.png" alt="FlashWorldMC Logo">
+            <div class="navbar">
+        <button onclick="window.open('..')">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M341.8 72.6c-12.3-11.4-31.3-11.4-43.5 0l-224 208c-9.6 9-12.8 22.9-8 35.1C71.1 327.9 82.8 336 96 336h16v176c0 35.3 28.7 64 64 64h288c35.3 0 64-28.7 64-64V336h16c13.2 0 25-8.1 29.8-20.3 4.8-12.2 1.6-26.2-8-35.1l-224-208zM304 384h32c26.5 0 48 21.5 48 48v96H256v-96c0-26.5 21.5-48 48-48z"/></svg>
+            <p>Home</p>
+        </button>
+        <button onclick="window.open('./games')">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M448 128c106 0 192 86 192 192s-86 192-192 192H192C86 512 0 426 0 320s86-192 192-192h256zM192 240c-13.3 0-24 10.7-24 24v32h-32c-13.3 0-24 10.7-24 24s10.7 24 24 24h32v32c0 13.3 10.7 24 24 24s24-10.7 24-24v-32h32c13.3 0 24-10.7 24-24s-10.7-24-24-24h-32v-32c0-13.3-10.7-24-24-24zm240 96c-17.7 0-32 14.3-32 32s14.3 32 32 32 32-14.3 32-32-14.3-32-32-32zm64-96c-17.7 0-32 14.3-32 32s14.3 32 32 32 32-14.3 32-32-14.3-32-32-32z"/></svg>
+            <p>Games</p>
+        </button>
+        <button onclick="window.open('.')">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M288.3 61.5c19.8-11.4 44.2-11.4 64 0L528.2 163c19.8 11.4 32 32.6 32 55.4v203c0 22.9-12.2 44-32 55.4L352.3 578.5a64.158 64.158 0 01-64 0L112.5 477c-19.8-11.4-32-32.6-32-55.4v-203c0-22.9 12.2-44 32-55.4L288.3 61.5zm207.8 360V255.4l-143.8 83v166.1l143.8-83z"/></svg>
+            <p>MC Server</p>
+        </button>
+        <button onclick="window.open('https://alamc.ddns.net/hfs/', 'blank')">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M160 96c-35.3 0-64 28.7-64 64v64c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64v-64c0-35.3-28.7-64-64-64H160zm216 72c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm56 24c0-13.3 10.7-24 24-24s24 10.7 24 24-10.7 24-24 24-24-10.7-24-24zM160 352c-35.3 0-64 28.7-64 64v64c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64v-64c0-35.3-28.7-64-64-64H160zm216 72c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm56 24c0-13.3 10.7-24 24-24s24 10.7 24 24-10.7 24-24 24-24-10.7-24-24z"/></svg>
+            <p>HFS</p>
+        </button>
+        <button onclick="window.open('https://discord.gg/dVNtZtrE8S'),'blank'">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M524.5 133.8c-.2-.3-.4-.6-.8-.7-38.1-17.5-78.4-30-119.7-37.1-.4-.1-.8 0-1.1.1-.3.1-.6.4-.8.8-5.5 9.9-10.5 20.2-14.9 30.6-44.6-6.8-89.9-6.8-134.4 0-4.5-10.5-9.5-20.7-15.1-30.6-.2-.3-.5-.6-.8-.8-.3-.2-.7-.2-1.1-.2-41.3 7.1-81.6 19.6-119.7 37.1-.3.1-.6.4-.8.7-76.2 113.8-97.1 224.9-86.9 334.5 0 .3.1.5.2.8.1.3.3.4.5.6 44.4 32.9 94 58 146.8 74.2.4.1.8.1 1.1 0 .3-.1.7-.4.9-.7 11.3-15.4 21.4-31.8 30-48.8.1-.2.2-.5.2-.8 0-.3 0-.5-.1-.8-.1-.3-.2-.5-.4-.6-.2-.1-.4-.3-.7-.4-15.8-6.1-31.2-13.4-45.9-21.9-.3-.2-.5-.4-.7-.6-.2-.2-.3-.6-.3-.9 0-.3 0-.6.2-.9.2-.3.3-.5.6-.7 3.1-2.3 6.2-4.7 9.1-7.1.3-.2.6-.4.9-.4.3 0 .7 0 1 .1 96.2 43.9 200.4 43.9 295.5 0 .3-.1.7-.2 1-.2.3 0 .7.2.9.4 2.9 2.4 6 4.9 9.1 7.2.2.2.4.4.6.7.2.3.2.6.2.9 0 .3-.1.6-.3.9-.2.3-.4.5-.6.6-14.7 8.6-30 15.9-45.9 21.8-.2.1-.5.2-.7.4-.2.2-.3.4-.4.7-.1.3-.1.5-.1.8 0 .3.1.5.2.8 8.8 17 18.8 33.3 30 48.8.2.3.6.6.9.7.3.1.8.1 1.1 0 52.9-16.2 102.6-41.3 147.1-74.2.2-.2.4-.4.5-.6.1-.2.2-.5.2-.8 12.3-126.8-20.5-236.9-86.9-334.5zm-302 267.7c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.4 59.2-52.8 59.2zm195.4 0c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.2 59.2-52.8 59.2z"/></svg>
+            <p>Discord</p>
+        </button>
+    </div>
+    <br>
+    <br>
+    <div class="content-div" id="status" style="width: min-content;margin: auto;">
+        <h1 style="text-align: center;">Server Status</h1>
+        <img class="nobg" style="max-width:30rem;width: 85dvw;display: block;margin: auto;" src="https://api.mcstatus.io/v2/widget/java/alamc.ddns.net" alt="Server Status Widget">
+ </div>
+    <div class="column">
+        <div class="content-div">
+                <h1 style="text-align: center;">About</h1>
+                <a id="bgpiclink" href="" target="_blank"><img id="bgpic" src="" alt="bgpic"></a>
+                <p>
+                    FlashWorldMC is a custom modded Minecraft server. 
+                    Unlike other modded Minecraft servers, this modpack is focused around variety.
+                     Which means that this modpack is open to different play styles allowing you to enjoy the server the way you want.
                     </p>
+        </div>
+        <div class="content-div">
+                <h1 style="text-align: center;">Server IP</h1>
+                <div style="display: flex;padding: auto;margin: auto;width: min-content;">
+                    <input id="serverip" type="text" readonly="true" value="alamc.ddns.net"> 
+                    <button onclick="copytext()">
+                        <p>Copy</p>
+                    </button>
+                    <script>
+                        function copytext()  {
+                              // Get the text field
+                              var copyText = document.getElementById("serverip");
+
+                                // Select the text field
+                                copyText.select();
+                                copyText.setSelectionRange(0, 99999); // For mobile devices
+
+                                // Copy the text inside the text field
+                                navigator.clipboard.writeText(copyText.value);
+                                
+                                // Alert the copied text
+                                alert("Copied the text: " + copyText.value);
+                            }
+                    </script>
+                </div>
+                <p class="note" style="text-align: center;font-size: smaller;color: rgb(159, 159, 159);">Since May 31st, 2025 the server port has been changed to the default (25565)</p>
+               <hr>
+                <h1 style="text-align: center;">Download Modpack</h1>
+
+                <p>The Server Modpack is a Curseforge Format modpack which means it can only be used with the <a href="https://www.curseforge.com/download/app" target="_blank" rel="noopener noreferrer">CurseForge App</a> or <a href="https://prismlauncher.org/" target="_blank" rel="noopener noreferrer">Prism Launcher</a>. Also please note, This server is not cracked. You must have a legitimate Minecraft Account in order to play.  </p>
+                                     <br>
+                <div style="display: flex;padding: auto;margin: auto;width: min-content;">
+                <button onclick="window.open('https://alamc.ddns.net/hfs/FlashWorld/fwmc-latest.zip?dl','blank')">
+                    <div>
+   
+                    <p>Download</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M352 96C352 78.3 337.7 64 320 64C302.3 64 288 78.3 288 96L288 306.7L246.6 265.3C234.1 252.8 213.8 252.8 201.3 265.3C188.8 277.8 188.8 298.1 201.3 310.6L297.3 406.6C309.8 419.1 330.1 419.1 342.6 406.6L438.6 310.6C451.1 298.1 451.1 277.8 438.6 265.3C426.1 252.8 405.8 252.8 393.3 265.3L352 306.7L352 96zM160 384C124.7 384 96 412.7 96 448L96 480C96 515.3 124.7 544 160 544L480 544C515.3 544 544 515.3 544 480L544 448C544 412.7 515.3 384 480 384L433.1 384L376.5 440.6C345.3 471.8 294.6 471.8 263.4 440.6L206.9 384L160 384zM464 440C477.3 440 488 450.7 488 464C488 477.3 477.3 488 464 488C450.7 488 440 477.3 440 464C440 450.7 450.7 440 464 440z"/></svg>
+                    </div>
+                </button>
                 </div>
             </div>
-<div class="container">
-<div id="rules" style="width: max-content;">
-                        <h2>Rules</h2>
-                        <p>Failure to comply may result in a <b style="color: rgb(255, 188, 63);">kick</b> or <b
-                                style="color: rgb(255, 87, 87);">ban</b></p>
-                        <p></p>
-                        <ol style="list-style-position: inside;">
+    </div>
+    <div class="column">
+        <div class="content-div">
+                <h1 style="text-align: center;">Rules</h1>
+                <p style="width: 90%;">
+                    <ol style="list-style-position: inside;width: 99%;">
                             <li style="text-align: left;font-size: 1.2em;"><b>NO</b>
                                 Hacking! This also includes xray and any
                                 exploitation of a bug(e.g. duping)<p style="font-size: 0.9em !important;">This
@@ -59,8 +106,7 @@
                             <li style="text-align: left;font-size: 1.2em;">Do
                                 not try to crash the server in any way<p style="font-size: 0.9em !important;">Lag
                                     Machines and such will have punishment.
-                                    Running a server costs resources even if I'm
-                                    doing it myself.</p>
+                                    Running a server costs resources.</p>
                             </li>
                             <li style="text-align: left;font-size: 1.2em;">This
                                 is NOT an anarchy server<p style="font-size: 0.9em !important;">There
@@ -81,63 +127,25 @@
                                     part of the base are offline</p>
                             </li>
                         </ol>
-                        <p>Basically just have some common sense. Have
-                            fun!</p>
-
+                </p>
+        </div>
+        <div class="content-div">
+                <h1 style="text-align: center;">Bluemap</h1>
+                <p>Bluemap is a mod/plugin that provides a 3D interactive map of the Minecraft server.</p>
+                <iframe style="aspect-ratio: 1/1;width:80%;margin: auto;display: block;" src="https://alamc.ddns.net/map/" frameborder="0"></iframe>
+                
+                <br>
+                <div style="display: block;padding: auto;margin: auto;width:fit-content ;">
+                <button onclick="window.open('https://alamc.ddns.net/map', 'blank')">
+                    <div>
+                        <p>Open Map In New Tab</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z"/></svg>
                     </div>
-<div id="ip" style="width: min-content;height: auto;">
-                    <h3>Java</h3>
-                    <p style="font-size:0.9em;margin: 0;"><i>Since May 31st, 2025 the server
-                         port has been changed to the default (25565)
-                    </i></p>
-                    <p>IP: alamc.ddns.net</p>
-                                        <p style="font-size:0.9em;margin: 0;"><i>You may also include the port number if needed
-                    </i></p>
-                    <p>IP: alamc.ddns.net:25565</p>
-                    <br>
-    <h3>Bedrock</h3>
-    <p style="font-size:0.9em;line-height: 0.2em;"><i>Port is in separate box on bedrock so it is listed separately.</i></p>
-    <p>IP: alamc.ddns.net</p>
-    <p>Port: 19132</p>
-</div>
-</div>
-
-<div class="container" style="flex-wrap: nowrap;">
-<div  id="Console"style="text-align: center;max-width: 49%;height:auto;;"><h2 style="text-align: center;">Playing on a Console?</h2>
-    <div style="display: flex;margin-left: auto;margin-right: auto;align-items: center;width: auto;background: rgb(255,209,19);
-    background: radial-gradient(circle, rgba(255,209,19,1) 0%, rgba(255,188,15,0.7624332203584558) 50%, rgba(126,126,126,0) 100%);padding-left: 20px;padding-right: 20px;">
-        <img src="../media/ps3.png" alt="ps3" style="height: 10vw;width: auto;margin: auto;">
-        <img src="../media/3dsalt.png" alt="nintender 3d es" style="height: 10vw;width: auto;margin: auto;">
-        <img src="../media/xobx.png" alt="xobx" style="height: 10vw;width: auto;margin: auto;">
-
+                </button>
+                </div>
+            </div>
     </div>
-
-<p style="max-width:700px;margin: auto;text-align: justify;">Since Mojang decided to not add a add server button on console you will need to rely on a mobile device/chromebook to join. This can be achieved through either app below.</p>
-<br>
-<h3>BedrockTogether</h3>
-<a href="https://bedrocktogether.net/" class="content-box-a">(website)</a>
-<br>
-<br>
-<h3>MC Server Connector</h3>
-<a href="https://play.google.com/store/apps/details?id=com.smokiem.mcserverconnector" class="content-box-a">PlayStore</a>
-<a href="https://apps.apple.com/us/app/mc-server-connector/id1548251304" class="content-box-a">AppStore</a>
-<br>
-<br>
-
-</div>
-<div  id="map" style="max-width: 49%;text-align: center;height: 49%;">
-    <h3>Dynmap</h3>
-<!-- <img src="../media/blumap.png" alt="blue map logo" style="display: block;margin: auto;height: 40px;width: auto;border-radius: 2em;">-->
-<p>FlashWorldMC uses a server plugin called dynmap which shows a 2d and isometric view of the server. On the map you can fully explore the server. You can also see players on the map. Below you can open dynmap (Only available when server is running).</p>
-<iframe src="https://alamc.ddns.net/map" frameborder="0" style="width: 80%;aspect-ratio: 1/1;min-width: 100px"></iframe>
-<p><a href="https://alamc.ddns.net/map" target="_blank" class="content-box-a">Open In A New Tab</a> | 
-<a href="http://alamc.ddns.net:8100/" target="_blank" class="content-box-a">Websocket Fallback</a></p>
-<br>
-</div>
-</div>
-
-    </div>
-
+    <div><p  style="text-align: center;text-shadow: 0 0 2px black;" class="note">FlashWorldMC V7 is an experimental modded server. All bugs and issues should be reported in the discord server.</p></div>
+    
 </body>
-
 </html>

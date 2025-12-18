@@ -34,7 +34,8 @@
         </button>
     </div>
 
-  <div class="content-div" id="Game">
+  <div class="content-div">
+    <div id="Game" class="flashcontainer"></div>
 
   </div>
   <script>
@@ -55,8 +56,7 @@
         //<embed src="somefilename.swf" width="550" height="400"> </embed>
         var objectElement = document.createElement('embed');
         objectElement.setAttribute("src", "https://alamc.ddns.net/swfs/motox3m.swf");
-        objectElement.setAttribute("style", "display:block;margin:auto");
-        objectElement.setAttribute("width", "617");
+        objectElement.setAttribute("style", "display:block;margin:auto;width:100%;height:100%;overflow:hidden;");              objectElement.setAttribute("width", "617");
         objectElement.setAttribute("height", "469");
         gameElement.appendChild(objectElement);
         document.head.appendChild(flashScript);
@@ -72,8 +72,7 @@
       if (gameElement) {
         var objectElement = document.createElement('object');
         objectElement.setAttribute("data", "https://alamc.ddns.net/swfs/motox3m.swf");
-        objectElement.setAttribute("style", "display:block;margin:auto");
-        gameElement.appendChild(objectElement);
+        objectElement.setAttribute("style", "display:block;margin:auto;width:100%;height:100%;overflow:hidden;");              gameElement.appendChild(objectElement);
         var flashScript = document.createElement('script');
         flashScript.src = "https://unpkg.com/@ruffle-rs/ruffle";
         document.head.appendChild(flashScript);

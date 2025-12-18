@@ -9,7 +9,7 @@
 body {
     margin: 0px;
     background: #000000;
-    background: url(./media/bg.png);
+    background: url(./media/bg.png), black;
     background-size:cover ;
     background-attachment:scroll;
     font-family: Arial, Helvetica, sans-serif;
@@ -22,7 +22,7 @@ body {
     aspect-ratio: 1/1;
     margin-bottom: -0.6rem;
 
-    
+
 }
 .navbar >  button  > p {
     color: white;
@@ -110,6 +110,14 @@ fill: rgba(253, 145, 0, 1);
     height: 80%;
     width: unset;
 
+}
+.flashcontainer {
+    object-fit: contain !important;
+    aspect-ratio: 4/3;
+    height: 70%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2em;
 }
 .column {
     display: flex;

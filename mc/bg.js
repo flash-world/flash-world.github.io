@@ -1,5 +1,5 @@
         // cool backgrounds
-        var numofBackgrounds = 115
+        var numofBackgrounds = 131
         var fpics = document.querySelector("fpic");
         var fpiclinks = document.querySelector("fpiclink");
         function changeBackground() {

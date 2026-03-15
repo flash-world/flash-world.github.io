@@ -6,7 +6,7 @@ const filesToCache = [
 	"Quake3FavIcon_512x512.png",
 	"Quake3Game.htm",
 	"Quake3Game.js",
-	"https://alamc.ddns.net/q3/pak0.pk3",
+	"https://flashworld.net/q3/pak0.pk3",
 	"Quake3Share.png"
 ];
 

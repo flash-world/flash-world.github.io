@@ -13,19 +13,19 @@
 
     <img class="imglogo" src="../media/fwmcbig.png" alt="FlashWorldMC Logo">
         <div class="navbar">
-        <button onclick="window.open('/')">
+        <button onclick="window.open('/', '_self')">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M341.8 72.6c-12.3-11.4-31.3-11.4-43.5 0l-224 208c-9.6 9-12.8 22.9-8 35.1C71.1 327.9 82.8 336 96 336h16v176c0 35.3 28.7 64 64 64h288c35.3 0 64-28.7 64-64V336h16c13.2 0 25-8.1 29.8-20.3 4.8-12.2 1.6-26.2-8-35.1l-224-208zM304 384h32c26.5 0 48 21.5 48 48v96H256v-96c0-26.5 21.5-48 48-48z"/></svg>
             <p>Home</p>
         </button>
-        <button onclick="window.open('/games/')">
+        <button onclick="window.open('/games/', '_self')">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M448 128c106 0 192 86 192 192s-86 192-192 192H192C86 512 0 426 0 320s86-192 192-192h256zM192 240c-13.3 0-24 10.7-24 24v32h-32c-13.3 0-24 10.7-24 24s10.7 24 24 24h32v32c0 13.3 10.7 24 24 24s24-10.7 24-24v-32h32c13.3 0 24-10.7 24-24s-10.7-24-24-24h-32v-32c0-13.3-10.7-24-24-24zm240 96c-17.7 0-32 14.3-32 32s14.3 32 32 32 32-14.3 32-32-14.3-32-32-32zm64-96c-17.7 0-32 14.3-32 32s14.3 32 32 32 32-14.3 32-32-14.3-32-32-32z"/></svg>
             <p>Games</p>
         </button>
-        <button onclick="window.open('/mc/')">
+        <button onclick="window.open('/mc/', '_self')">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M288.3 61.5c19.8-11.4 44.2-11.4 64 0L528.2 163c19.8 11.4 32 32.6 32 55.4v203c0 22.9-12.2 44-32 55.4L352.3 578.5a64.158 64.158 0 01-64 0L112.5 477c-19.8-11.4-32-32.6-32-55.4v-203c0-22.9 12.2-44 32-55.4L288.3 61.5zm207.8 360V255.4l-143.8 83v166.1l143.8-83z"/></svg>
             <p>MC Server</p>
         </button>
-        <button onclick="window.open('https://alamc.ddns.net/hfs/', 'blank')">
+        <button onclick="window.open('https://flashworld.net/hfs/', 'blank')">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M160 96c-35.3 0-64 28.7-64 64v64c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64v-64c0-35.3-28.7-64-64-64H160zm216 72c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm56 24c0-13.3 10.7-24 24-24s24 10.7 24 24-10.7 24-24 24-24-10.7-24-24zM160 352c-35.3 0-64 28.7-64 64v64c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64v-64c0-35.3-28.7-64-64-64H160zm216 72c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm56 24c0-13.3 10.7-24 24-24s24 10.7 24 24-10.7 24-24 24-24-10.7-24-24z"/></svg>
             <p>HFS</p>
         </button>
@@ -38,7 +38,7 @@
     <br>
     <div class="content-div" id="status" style="width: min-content;margin: auto;">
         <h1 style="text-align: center;">Server Status</h1>
-        <img class="nobg" style="max-width:30rem;width: 85dvw;display: block;margin: auto;" src="https://api.mcstatus.io/v2/widget/java/alamc.ddns.net" alt="Server Status Widget">
+        <img class="nobg" style="max-width:30rem;width: 85dvw;display: block;margin: auto;" src="https://api.mcstatus.io/v2/widget/java/mc.flashworld.net" alt="Server Status Widget">
  </div>
     <div class="column">
         <div class="content-div">
@@ -52,7 +52,7 @@
         <div class="content-div">
                 <h1 style="text-align: center;">Server IP</h1>
                 <div style="display: flex;padding: auto;margin: auto;width: min-content;">
-                    <input id="serverip" type="text" readonly="true" value="alamc.ddns.net"> 
+                    <input id="serverip" type="text" readonly="true" value="mc.flashworld.net"> 
                     <button onclick="copytext()">
                         <p>Copy</p>
                     </button>
@@ -131,11 +131,11 @@
         <div class="content-div">
                 <h1 style="text-align: center;">Bluemap</h1>
                 <p>Bluemap is a mod/plugin that provides a 3D interactive map of the Minecraft server.</p>
-                <iframe style="aspect-ratio: 1/1;width:80%;margin: auto;display: block;" src="https://alamc.ddns.net/map/" frameborder="0"></iframe>
+                <iframe style="aspect-ratio: 1/1;width:80%;margin: auto;display: block;" src="https://flashworld.net/map/" frameborder="0"></iframe>
                 
                 <br>
                 <div style="display: block;padding: auto;margin: auto;width:fit-content ;">
-                <button onclick="window.open('https://alamc.ddns.net/map', 'blank')">
+                <button onclick="window.open('https://flashworld.net/map', 'blank')">
                     <div>
                         <p>Open Map In New Tab</p>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z"/></svg>
@@ -144,7 +144,7 @@
                 </div>
             </div>
     </div>
-    <div><p  style="text-align: center;text-shadow: 0 0 2px black;" class="note">FlashWorldMC V7 is an experimental modded server. All bugs and issues should be reported in the discord server.</p></div>
+    <div><p  style="text-align: center;text-shadow: 0 0 2px black;" class="note">FlashWorldMC V9 is an experimental modded server. All bugs and issues should be reported in the discord server.</p><br></div>
     
 </body>
 

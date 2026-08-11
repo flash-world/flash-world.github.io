@@ -31,7 +31,7 @@ body {
    
 }
 .navbar {
-    background-color: rgba(88, 88, 88, 0.2);
+    background-color: rgba(68, 68, 68, 0.38);
     border-radius: 2em;
     position: sticky;
     margin-top: 1rem;
@@ -45,7 +45,7 @@ body {
     z-index: 1000;
     max-width: 80rem;
     backdrop-filter: blur(10px);
-    border-color:rgba(80, 80, 80, 0.241);
+    border-color:rgba(40, 40, 40, 0.4);
     border-width: 0.3rem;
     border-style: solid;
     box-shadow: 0 0 10px rgb(0, 0, 0);
@@ -58,7 +58,7 @@ body {
     cursor: pointer;
     background: none;
     background-blend-mode: normal;
-    border: solid 0.2rem rgba(49, 49, 49, 0.241);
+    border: solid 0.2rem rgba(49, 49, 49, 0.4);
     border-radius: 2em;
     margin: 0.2rem;
     padding: 0.3rem;
@@ -126,14 +126,14 @@ fill: rgba(253, 145, 0, 1);
     width: 50%;
 }
 .content-div{
-    background-color: rgba(88, 88, 88, 0.2);
+    background-color: rgba(68, 68, 68, 0.38);
     border-radius: 2em;
     padding: 1em;
-    margin: 3vw;
+    margin: 0.4vw;
     box-shadow: 0 0 10px rgb(0, 0, 0);
     color: white;
     backdrop-filter: blur(10px);
-    border-color:rgba(80, 80, 80, 0.241);
+    border-color:rgba(40, 40, 40, 0.4);
     border-width: 0.3rem;
     border-style: solid;
     padding-left: 1vw;
@@ -141,7 +141,7 @@ fill: rgba(253, 145, 0, 1);
 }
 
 img, iframe, embed{
-    background-color: rgba(88, 88, 88, 0.2);
+    background-color: rgba(68, 68, 68, 0.38);
     border-radius: 2em;
     display: block;
     margin: auto;
@@ -149,7 +149,7 @@ img, iframe, embed{
     box-shadow: 0 0 10px rgb(0, 0, 0);
     color: white;
     backdrop-filter: blur(10px);
-    border-color:rgba(80, 80, 80, 0.241);
+    border-color:rgba(40, 40, 40, 0.4);
     border-width: 0.1rem;
     border-style: solid;
     padding: 0.42rem;
@@ -200,6 +200,19 @@ h1 {
     font-family: 'Coolvec';
     font-weight: 400;
 }
+h3 {
+    text-shadow: 0 0 5px rgb(0, 0, 0);
+
+    font-size: 2rem;
+    line-height: 2.8rem;
+        margin-left: auto;
+    margin-right:auto ;
+    text-align: left;
+    display: block;
+    max-width: 90%;
+    font-family: 'Coolvec';
+    font-weight: 400;
+}
 .content-div > p , li {
     font-size: 1.2em;
     line-height: 1.8em;
@@ -218,10 +231,21 @@ li {
     max-width: unset;
 
 }
+li > p {
+    line-height: 1.8em;
+    max-width: 90%;
+    font-size: 1.2rem;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    text-shadow: 0 0 5px rgb(0, 0, 0);
+
+}
 ol {
     padding: 0px;
 }
 .note {
+    text-shadow: #000000 0px 0px 40px;
         font-size: 0.8em;
     line-height: 1.2em;
     color: rgb(159, 159, 159);
@@ -265,7 +289,7 @@ input {
         box-shadow: 0 0 10px rgb(0, 0, 0);
     color: white;
     backdrop-filter: blur(10px);
-    border-color:rgba(80, 80, 80, 0.241);
+    border-color:rgba(40, 40, 40, 0.4);
     border-width: 0.3rem;
     border-style: solid;
     margin: 0.3rem;
@@ -282,7 +306,7 @@ button, .collectiondiv {
     cursor: pointer;
     background: none;
     background-blend-mode: normal;
-    border: solid 0.2rem rgba(49, 49, 49, 0.241);
+    border: solid 0.2rem rgba(49, 49, 49, 0.4);
     border-radius: 2em;
     margin: 0.3rem;
     padding: 0.3rem;
@@ -299,7 +323,7 @@ button > svg , button > div > svg{
 }
 button  > p , button > div > p{
     color: white;
-    font-size: 1.5rem;
+    font-size: 1rem;
      font-weight:900;
    
 }
